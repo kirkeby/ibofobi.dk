@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html metal:use-macro='macros/page'>
+<head>
+  <title metal:fill-slot='title'>Sheared</title>
+</head>
+<body>
+<div metal:fill-slot='content'>
+
+<h1>Sheared</h1>
+
+<p>Sheared is a library for network programming in Stackless Python.
+Where traditional network programming would uses threads or processes
+Sheared uses stackless tasklets, but all blocking operations go through
+a reactor tasklet. In this way the best of asynchronous (no resource
+locking to worry about) and synchronous (no need to split code into
+different call-backs at blocking operations, e.g. database queries)
+network programming is combined.</p>
+
+<p>I have taken liberal amounts of inspiration from the <a
+href='http://www.twistedmatrix.com/'>Twisted</a> crowd in writing
+Sheared, but luckily I have not yet caught the Framework Bug from them.
+Alas, since Sheared is presently a one-man project, Twisted is a much
+more mature project, and has many more features.</p>
+
+<p>Currently Sheared has support for TCP and UNIX sockets (others
+supported in in the BSD sockets interface should be simple to support),
+and it comes with it's own web-server. Linux is the only platform known
+to be supported, but others with reasonable BSD-socket and
+<tt>select(2)</tt> implementations should work also.</p>
+
+<p>So far Sheared has (to my knowledge :-) only been used in one
+publicly available project: <a href='/stuff/jukebox/'>Jukebox</a>, my own
+MP3 streaming server with built-in web- and telnet-admin interfaces.</p>
+
+<p>Sheared is licensed under the GNU General Public License, and is
+copyright &copy; 2003 Sune Kirkeby.</p>
+
+<h2>Download</h2>
+
+<p>Go <a href='/download/Sheared'>download</a> it.</p>
+
+</div>
+</body>
+</html>

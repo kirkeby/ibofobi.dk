@@ -1,0 +1,113 @@
+<html metal:use-macro='macros/page'>
+<head>
+  <title metal:fill-slot='title'>Hurd Entropy</title>
+</head>
+<body>
+<div metal:fill-slot='content'>
+
+<h1>/dev/{,u}random driver for GNU/Hurd</h1>
+
+<h2>DOWNLOAD</h2>
+
+<a href='/download/hurd-entropy/entropy-0.3.tar.bz2'>entropy-0.3.tar.bz2</a>
+(<a href='/download/hurd-entropy/entropy-0.3.diff.bz2'>diff</a>)
+dated Thu Jun 15 18:37:17 CEST 2000<br />
+
+<a href='/download/hurd-entropy/entropy-0.2.tar.bz2'>entropy-0.2.tar.bz2</a>
+(<a href='/download/hurd-entropy/entropy-0.2.diff.bz2'>diff</a>)
+dated Sun Jun 11 20:31:18 CEST 2000.<br />
+
+<a href='/download/hurd-entropy/entropy-0.1.tar.bz2'>entropy-0.1.tar.bz2</a>
+dated Sat Jun 10 13:26:15 CEST 2000.<br />
+
+<h2>README</h2>
+
+<h3>/dev/{,u}random for GNU/Hurd</h3>
+
+<p>This is a port of the Linux /dev/{,u}random device driver, it is still
+incomplete (lacks the in-kernel entropy gathering), atm. it only
+generates randomness of the same order as /dev/random under Linux, when
+the entropy pool is empty.</p>
+
+<p>This port is part user-space and part in-kernel (lacking), the
+user-space part consists of two translators:</p>
+<dl>
+<dt>entropy</dt>
+<dd>gathers entropy and generates random data from it.</dd>
+<dt>random</dt>
+<dd>/dev/{,u}random translator (uses entropy)</dd>
+</dl>
+
+<h3>Disclaimer</h3>
+
+<p>I really have no qualifications that would allow me to undertake
+something as requiring security-wise as this, so this stuff might very
+well not be secure at all.</p>
+
+
+<h3>Compilation</h3>
+
+<p>I haven't autoconf-ified this yet, so</p>
+
+<blockquote><p><samp>$</samp> <kbd>make</kbd></p></blockquote>
+
+<p>should do to compile both entropy and random.</p>
+
+<h3>Setup</h3>
+
+<p>This is how I have installed entropy and random (the install.sh script
+does this):</p>
+
+<blockquote><p>
+<pre>$ cp random entropy /hurd
+$ settrans -cg /servers/entropy
+$ chmod 0600 /servers/entropy
+$ settrans /servers/entropy /hurd/entropy
+$ settrans -cg /dev/random
+$ chmod 0444 /dev/random
+$ settrans /dev/random /hurd/random --blocking
+$ settrans -cg /dev/urandom
+$ chmod 0444 /dev/urandom
+$ settrans /dev/urandom /hurd/random --unblocking</pre>
+</p></blockquote>
+
+<p>After this is done you probably want to install the Entropy Gathering
+Daemon and setup it and egd_glue to run at system startup, so your
+entropy pool won't be empty.  If egd is connected to a socket, say
+/var/run/egd (egd_glue does not support ip sockets), you just have to
+insert a command like this into your system startup script of
+choice:</p>
+
+<blockquote><p><kbd>/usr/local/bin/egd_glue --entropy /servers/entropy --egd /var/run/egd</kbd></p></blockquote>
+
+<p>The included script rc.egd can be placed in /etc/init.d and installed via
+update-rc.d on Debian systems:</p>
+
+<blockquote>
+<pre># cp rc.egd /etc/init.d/egd
+# update-rc.d egd start 05 2 3 4 5 . stop 95 0 1 6 .</pre>
+</blockquote>
+
+<h3>GNU/Mach Entropy Device</h3>
+
+<p>If you want even better entropy that can be gathered by the Entropy
+Gathering Daemon, you might want to create a special GNU/Mach kernel, by
+patching a recent CVS snapshot with the included gnumach-entropy.diff
+patch-file, and configuring it with --enable-entropy.  This adds a special
+entropy device to your kernel, which the entropy translator automagically
+will use to get entropy gathered by your kernel.  This is a Good
+Thing(tm).</p>
+
+<p>If you do this you can ignore the instructions on setting up the Entropy
+Gathering Daemon and egd_glue.</p>
+
+<h3>Author</h3>
+
+<p>The entropy gathering and hashing was ripped from a 2.2.11 Linux kernel, 
+much of the trivfs code was inspired (or just plain ripped) from  
+/src/hurd/trans/null.c and /src/hurd/trans/hello*.c.  It was all done by
+Sune Kirkeby (the ripping and glueing back together, that is).</p>
+
+</div>
+</body>
+</html>

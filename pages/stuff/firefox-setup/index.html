@@ -1,0 +1,31 @@
+<html metal:use-macro='macros/page'>
+<head>
+  <title metal:fill-slot='title'>My Firefox Setup</title>
+</head>
+<body>
+<div metal:fill-slot='content'>
+<pre>Preferences:
+* General
+  - Home Page: http://home.ibofobi.dk/
+  - Fonts: monospace size 14; minimum size 12
+* Privacy
+  - Cookies, "until i close Firefox",
+             exceptions: ibofobi.dk, google.com, icio.us, cafeen.org
+* Web features:
+  - No Java
+  - JavaScript, only "change images"
+* Downloads:
+  - "Ask me where"
+* Advanced:
+  - "Begin finding .."
+  - "Other apps in new window"
+  
+Extensions:
+* http://flashblock.mozdev.org/installation.html
+
+Bookmarklets:
+* http://naeblis.cx/rtomayko/2005/01/12/experimental-delicious-thing-generator
+</pre>
+</div>
+</body>
+</html>
