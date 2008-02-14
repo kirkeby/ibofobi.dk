@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
 import os
+from operator import itemgetter
 from time import strptime
 from datetime import datetime
+from markdown import markdown
 
 here = os.path.dirname(__file__)
 index_path = os.path.join(here, 'index')
@@ -29,8 +31,6 @@ def read_index():
         }
 
     return idx
-
-index = read_index()
     
 def read_post(name):
     '''Read a blog post (given its external name).'''
@@ -39,4 +39,12 @@ def read_post(name):
     lines = post['source'].split('\n', 2)
     post['title'] = lines[0].strip()
     post['text'] = lines[-1].strip()
+    post['html'] = markdown(post['text']).decode('utf-8')
     return post
+
+index = read_index()
+
+all = index.values()
+all.sort(key=itemgetter('stamp'), reverse=True)
+
+recent = [ read_post(post['key']) for post in all[:5] ]

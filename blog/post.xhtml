@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html metal:use-macro='macros/page'>
+<head>
+  <title metal:fill-slot='title' tal:content='title'>about:me</title>
+</head>
+<body>
+  <div metal:fill-slot='content'>
+  <h1 tal:content='title'></h1>
+  <p>Posted <span class='timestamp' tal:content='stamp'/></p>
+  <div tal:replace='structure html'/>
+  </div>
+</body>
+</html>
