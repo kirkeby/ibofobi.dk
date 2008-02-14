@@ -1,0 +1,7 @@
+XHTML-as-HTML middleware updated
+================================
+
+I've updated [XHTMLAsHTMLMiddleware](http://code.ibofobi.dk/public/wiki/XHTMLAsHTMLMiddleware)
+to turn response content into HTML 4.01 Strict, instead of just munging
+the Content-Type header. This should work better with software which expects
+the quirks of HTML, such as `<br>` elements which have no end-tag.

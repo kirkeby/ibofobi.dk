@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+import os
+import sys
+from markdown import markdown
+from optparse import OptionParser
+from blog import read_post
+
+parser = OptionParser()
+
+metal_t = '''
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html metal:use-macro='macros/page'>
+<head>
+  <title metal:fill-slot='title'>%(title)s</title>
+</head>
+<body>
+  <div metal:fill-slot='content'>
+  <h1>%(title)s</h1>
+  <p>Posted <span class='timestamp'>%(stamp)s</span></p>
+  %(html)s
+  </div>
+</body>
+</html>
+'''
+
+def main(opts, args):
+    for name in args:
+        post = read_post(name)
+        post['html'] = markdown(post['text'])
+        metal = metal_t % post
+        sys.stdout.write(metal)
+
+if __name__ == '__main__':
+    main(*parser.parse_args())
