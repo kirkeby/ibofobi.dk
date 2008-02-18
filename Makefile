@@ -25,7 +25,7 @@ ${TARGET_PREFIX}/blog/index.html.work: blog/index
 	@echo blog/
 	@./metal --xhtml-doctype --context 'posts=blog:recent' < blog/recent.xhtml | ./to-html > $@
 
-${TARGET_PREFIX}/blog/feeds/latest/index.xml: blog/index
+${TARGET_PREFIX}/blog/feeds/latest/index.xml: blog/index blog/atom.xml
 	@echo blog/feeds/latest/
 	@mkdir -p $(dir $@)
 	@./metal --context 'posts=blog:recent' --context 'blog=blog:info' \
