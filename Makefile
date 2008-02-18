@@ -4,7 +4,8 @@ SOURCES=$(shell find pages -type f | sed s,^pages,,) \
         $(addsuffix /index,$(addprefix /blog/archive/,$(shell blog/published)))
 PAGES=$(addsuffix .html, $(basename ${SOURCES}))
 TARGETS=$(addprefix ${TARGET_PREFIX},${PAGES}) \
-	${TARGET_PREFIX}/blog/index.html
+	${TARGET_PREFIX}/blog/index.html \
+	${TARGET_PREFIX}/blog/feeds/latest/index.xml
 
 .PHONY: all
 
@@ -23,6 +24,12 @@ ${TARGET_PREFIX}/blog/archive/%/index.html.work: blog/% html.xsl page.html metal
 ${TARGET_PREFIX}/blog/index.html.work: blog/index
 	@echo blog/recent
 	@./metal --context 'posts=blog:recent' < blog/recent.xhtml | ./to-html > $@
+
+${TARGET_PREFIX}/blog/feeds/latest/index.xml: blog/index
+	@echo blog/feeds/latest/
+	@mkdir -p $(dir $@)
+	@./metal --context 'posts=blog:recent' --context 'blog=blog:info' \
+		< blog/atom.xml > $@
 
 %: %.work
 	@mv -f $< $@

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet href="{{ settings.MEDIA_URL }}/atom.css" type="text/css"?>
+<feed version="0.3" xmlns="http://purl.org/atom/ns#" xml:lang='en'>
+    <title tal:content='blog/title'></title>
+    <link rel='alternate' type='text/html'
+          tal:attributes='href blog/url'/>
+    <author><name tal:content='blog/author'></name></author>
+    <modified tal:content='python:posts[0]["stamp"].strftime("%Y-%m-%dT%H:%M:%S+0000")'/>
+
+    <info mode="xml" type="application/xhtml+xml">
+        <div xmlns="http://www.w3.org/1999/xhtml">This is a syndicated
+        feed, designed to be read in a syndicated feed reader. See <a
+        tal:attributes='href string:http://purl.org/net/syndication/subscribe/?atom={blog/url}/feeds/latest/'
+        onclick="location.href='http://purl.org/net/syndication/subscribe/?atom=' + location.href; return false;"
+        >purl subscription service</a> for help. Below you can see a short
+        summary of the posts in this feed, you can find the posts in
+        <a tal:attributes='href blog/url'>the blog</a>.</div>
+    </info>
+
+    <entry tal:repeat='post posts'>
+        <id tal:content='post/tag'/>
+        <issued tal:content='python:post["stamp"].strftime("%Y-%m-%dT%H:%M:%S+0000")'/>
+        <modified tal:content='python:post["stamp"].strftime("%Y-%m-%dT%H:%M:%S+0000")'/>
+        <link rel='alternate' type='text/html'
+              tal:attributes='href post/url'/>
+        <title type='application/xhtml+xml'>
+            <div xmlns='http://www.w3.org/1999/xhtml'
+                 tal:content='post/title'/>
+        </title>
+        <content type='application/xhtml+xml'>
+            <div xmlns='http://www.w3.org/1999/xhtml'
+                 tal:content='structure post/html'/>
+        </content>
+    </entry>
+</feed>

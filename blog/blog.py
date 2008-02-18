@@ -3,6 +3,8 @@
 import os
 from operator import itemgetter
 from time import strptime
+from time import mktime
+from time import gmtime
 from datetime import datetime
 from markdown import markdown
 
@@ -10,9 +12,9 @@ here = os.path.dirname(__file__)
 index_path = os.path.join(here, 'index')
 
 def parse_time(stamp):
-    t = strptime(stamp, '%Y-%m-%d:%H:%M:%S')
+    t = gmtime(mktime(strptime(stamp, '%Y-%m-%d:%H:%M:%S')))
     return datetime(t.tm_year, t.tm_mon, t.tm_mday,
-                    t.tm_hour, t.tm_sec, t.tm_min)
+                    t.tm_hour, t.tm_min, t.tm_sec)
 
 def read_index():
     '''Read the blog index and return a dictionary mapping external
@@ -48,3 +50,9 @@ all = index.values()
 all.sort(key=itemgetter('stamp'), reverse=True)
 
 recent = [ read_post(post['key']) for post in all[:5] ]
+
+info = {
+    'url': 'http://ibofobi.dk/blog/',
+    'title': 'about:me',
+    'author': 'Sune Kirkeby',
+}
