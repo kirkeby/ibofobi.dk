@@ -14,16 +14,16 @@ all: ${TARGETS}
 ${TARGET_PREFIX}/%.html.work: pages/%.html html.xsl page.html metal
 	@echo $<
 	@mkdir -p $(dir $@)
-	@./metal < $< | ./to-html > $@
+	@./metal --xhtml-doctype < $< | ./to-html > $@
 
 ${TARGET_PREFIX}/blog/archive/%/index.html.work: blog/% html.xsl page.html metal
 	@echo $<
 	@mkdir -p $(dir $@)
-	@./metal --context 'post=blog:read_post("$(subst blog/,,$<)")' < blog/post.xhtml | ./to-html > $@
+	@./metal --xhtml-doctype --context 'post=blog:read_post("$(subst blog/,,$<)")' < blog/post.xhtml | ./to-html > $@
 
 ${TARGET_PREFIX}/blog/index.html.work: blog/index
-	@echo blog/recent
-	@./metal --context 'posts=blog:recent' < blog/recent.xhtml | ./to-html > $@
+	@echo blog/
+	@./metal --xhtml-doctype --context 'posts=blog:recent' < blog/recent.xhtml | ./to-html > $@
 
 ${TARGET_PREFIX}/blog/feeds/latest/index.xml: blog/index
 	@echo blog/feeds/latest/
