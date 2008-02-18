@@ -6,9 +6,9 @@
 </head>
 <body>
   <div metal:fill-slot='content'>
-  <h1 tal:content='title'></h1>
-  <p>Posted <span class='timestamp' tal:content='stamp'/></p>
-  <div tal:replace='structure html'/>
+  <h1 tal:content='post/title'></h1>
+  <p>Posted <span class='timestamp' tal:content='post/stamp'/></p>
+  <div tal:replace='structure post/html'/>
   </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-stylesheet href="{{ settings.MEDIA_URL }}/atom.css" type="text/css"?>
-<feed version="0.3" xmlns="http://purl.org/atom/ns#" xml:lang='en'>
+<?xml-stylesheet href="http://media.ibofobi.dk/atom.css" type="text/css"?>
+<feed version="0.3" xmlns="http://www.w3.org/2005/Atom" xml:lang='en'>
     <title tal:content='blog/title'></title>
     <link rel='alternate' type='text/html'
           tal:attributes='href blog/url'/>
