@@ -1,6 +1,6 @@
 TARGET_PREFIX=../public_html/ibofobi.dk
 
-SOURCES=$(shell find pages -type f | sed s,^pages,,) \
+SOURCES=$(shell find pages -type f | egrep -v '~|/\.' | sed s,^pages,,) \
         $(addsuffix /index,$(addprefix /blog/archive/,$(shell blog/published)))
 PAGES=$(addsuffix .html, $(basename ${SOURCES}))
 TARGETS=$(addprefix ${TARGET_PREFIX},${PAGES}) \
@@ -15,6 +15,11 @@ ${TARGET_PREFIX}/%.html.work: pages/%.html html.xsl page.html metal
 	@echo $<
 	@mkdir -p $(dir $@)
 	@./metal --xhtml-doctype < $< | ./to-html > $@
+
+${TARGET_PREFIX}/%.html.work: pages/%.txt html.xsl page.html metal markdown
+	@echo $<
+	@mkdir -p $(dir $@)
+	@./markdown < $< | ./metal --xhtml-doctype | ./to-html > $@
 
 ${TARGET_PREFIX}/blog/archive/%/index.html.work: blog/% html.xsl page.html metal
 	@echo $<
