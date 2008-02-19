@@ -1,0 +1,47 @@
+~
+=
+
+ * [calendar](https://www.google.com/calendar?tab)
+ * [analytics](https://www.google.com/analytics/home/admin)
+ * [reader](https://www.google.com/reader/view/)
+
+forums:
+
+ * [dsf](http://misantropiskselskab.dk/dsf/)
+ * [dikutal](http://dikutal.dk)
+ * [dff](http://forum.cafeen.org/index.php?act=Search&amp;CODE=getnew&amp;rusfree=1)
+
+comics:
+
+ * [qc](http://www.questionablecontent.net/)
+ * [cad](http://ctrlaltdel-online.com/comic.php)
+ * [dieselsweeties](http://www.dieselsweeties.com/)
+ * [sinfest](http://www.sinfest.net/)
+ * [least](http://www.leasticoulddo.com/)
+
+news and odds:
+
+ * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
+ * [slashdot](http://slashdot.org/)
+ * [lTu](http://lambda-the-ultimate.org/)
+ * [prog](http://reddit.com/new">reddit</a>; <a href="http://programming.reddit.com/new)
+ * [y-c](http://news.ycombinator.com/news)
+ * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
+
+foo:
+
+ * [8-ball](http://mel.ibofobi.dk/%7Esune/cgi-bin/8-ball)
+ * [todo](http://voo2do.com/dashboard">voo2do</a>; <a href="http://del.icio.us/sune/personal:todo)
+ * [gmail](https://mail.google.com/)
+ * [fjæsbog](http://www.facebook.com/)
+ * [#H](http://travian.fronck.dk/forum/)
+ * [onsdagsdoodle](http://www.doodle.ch/participation.html?pollId=3ra4fhddizmwqap6)
+ * [damninteresting](http://www.damninteresting.com/)
+ * [euler](http://projecteuler.net/)
+ * [sast2](http://isis.ku.dk/kurser/index.aspx?xslt=default&amp;kursusid=26907)
+
+here:
+
+ * [reading](/reading)
+ * [writing](/writing)
+ * [wishlist](/wishlist)
