@@ -9,7 +9,7 @@ forums:
 
  * [dsf](http://misantropiskselskab.dk/dsf/)
  * [dikutal](http://dikutal.dk)
- * [dff](http://forum.cafeen.org/index.php?act=Search&amp;CODE=getnew&amp;rusfree=1)
+ * [dff](http://forum.cafeen.org/index.php?act=Search&CODE=getnew&rusfree=1)
 
 comics:
 
@@ -24,7 +24,7 @@ news and odds:
  * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
  * [slashdot](http://slashdot.org/)
  * [lTu](http://lambda-the-ultimate.org/)
- * [prog](http://reddit.com/new">reddit</a>; <a href="http://programming.reddit.com/new)
+ * [prog](http://programming.reddit.com/new)
  * [y-c](http://news.ycombinator.com/news)
  * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
 
@@ -38,7 +38,7 @@ foo:
  * [onsdagsdoodle](http://www.doodle.ch/participation.html?pollId=3ra4fhddizmwqap6)
  * [damninteresting](http://www.damninteresting.com/)
  * [euler](http://projecteuler.net/)
- * [sast2](http://isis.ku.dk/kurser/index.aspx?xslt=default&amp;kursusid=26907)
+ * [sast2](http://isis.ku.dk/kurser/index.aspx?xslt=default&kursusid=26907)
 
 here:
 
