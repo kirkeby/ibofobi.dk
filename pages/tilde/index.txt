@@ -31,10 +31,8 @@ news and odds:
 foo:
 
  * [8-ball](http://mel.ibofobi.dk/%7Esune/cgi-bin/8-ball)
- * [todo](http://voo2do.com/dashboard">voo2do</a>; <a href="http://del.icio.us/sune/personal:todo)
  * [gmail](https://mail.google.com/)
  * [fjæsbog](http://www.facebook.com/)
- * [#H](http://travian.fronck.dk/forum/)
  * [onsdagsdoodle](http://www.doodle.ch/participation.html?pollId=3ra4fhddizmwqap6)
  * [damninteresting](http://www.damninteresting.com/)
  * [euler](http://projecteuler.net/)
