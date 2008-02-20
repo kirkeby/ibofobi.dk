@@ -3,6 +3,7 @@ Reading
 
 Underway:
 
+ * _Against a Dark Background_, Iain M. Banks
  * _The Confusion_, Neal Stephenson
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
  * _Stardust_, Neil Gaiman
@@ -10,6 +11,9 @@ Underway:
 
 Previously (this is a very, very incomplete list; it records my reading from sometime in 2005):
 
+ * _Woken Furies_, Richard Morgan
+ * _Broken Angels_, Richard Morgan
+ * _Altered Carbon_, Richard Morgan
  * _Darkly Dreaming Dexter_, Jeff Lindsay
  * _The Design of Everyday Things_, Donald A. Norman
  * _Blink_, Malcolm Gladwell
