@@ -43,10 +43,10 @@ def main(opts, stdin, stdout):
     template = load_template(stdin)
     result = StringIO()
     template.expand(context(ctx), result, outputEncoding='utf-8')
-    result = result.getvalue().replace('<?xml version="1.0"?>', '')
+    result = result.getvalue().replace('<?xml version="1.0"?>', '').strip()
     
     print '<?xml version="1.0" encoding="utf-8"?>'
-    if opts.xhtml_doctype:
+    if opts.xhtml_doctype and not result.startswith('<!DOCTYPE '):
         print xhtml_doctype,
     print result,
 
