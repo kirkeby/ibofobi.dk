@@ -32,6 +32,7 @@ foo:
 
  * [8-ball](http://mel.ibofobi.dk/%7Esune/cgi-bin/8-ball)
  * [gmail](https://mail.google.com/)
+ * [google apps](https://mail.google.com/a/ibofobi.dk/)
  * [fjæsbog](http://www.facebook.com/)
  * [onsdagsdoodle](http://www.doodle.ch/participation.html?pollId=3ra4fhddizmwqap6)
  * [damninteresting](http://www.damninteresting.com/)
