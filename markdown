@@ -21,8 +21,8 @@ template = '''\
 def main(stdin, stdout):
     lines = stdin.readlines()
     title = escape(lines[0].strip())
-    text = ''.join(lines)
-    content = markdown(text)
+    text = ''.join(lines).decode('utf-8')
+    content = markdown(text).encode('utf-8')
 
     print >> stdout, template % locals()
 
