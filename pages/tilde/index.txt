@@ -1,7 +1,7 @@
 ~
 =
 
- * [calendar](https://www.google.com/calendar?tab)
+ * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
  * [reader](https://www.google.com/reader/view/)
  * [todo](http://del.icio.us/sune/personal:todo)
@@ -32,8 +32,8 @@ news and odds:
 foo:
 
  * [8-ball](http://mel.ibofobi.dk/%7Esune/cgi-bin/8-ball)
- * [gmail](https://mail.google.com/)
- * [google apps](https://mail.google.com/a/ibofobi.dk/)
+ * [gmail](https://mail.google.com/a/ibofobi.dk/)
+ * [google apps](https://www.google.com/a/ibofobi.dk/)
  * [fjæsbog](http://www.facebook.com/)
  * [onsdagsdoodle](http://www.doodle.ch/participation.html?pollId=3ra4fhddizmwqap6)
  * [damninteresting](http://www.damninteresting.com/)
