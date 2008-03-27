@@ -4,17 +4,19 @@ Reading
 Underway
 --------
 
- * _The Confusion_, Neal Stephenson
+ * _The System of the World_, Neal Stephenson
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
- * _Stardust_, Neil Gaiman
  * _Programming Collective Intelligence_, Toby Segaran
 
 2008
 ----
+ * _Stardust_, Neil Gaiman
  * _Against a Dark Background_, Iain M. Banks
 
 2005 - 2007
 -----------
+ * _The Confusion_, Neal Stephenson
+ * _Quicksilver_, Neal Stephenson
  * _Woken Furies_, Richard Morgan
  * _Broken Angels_, Richard Morgan
  * _Altered Carbon_, Richard Morgan
