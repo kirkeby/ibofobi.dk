@@ -15,6 +15,7 @@ Underway
 
 2005 - 2007
 -----------
+ * _Good Omens_, Neil Gaiman & Terry Pratchett
  * _The Confusion_, Neal Stephenson
  * _Quicksilver_, Neal Stephenson
  * _Woken Furies_, Richard Morgan
