@@ -38,7 +38,11 @@ foo:
  * [onsdagsdoodle](http://www.doodle.ch/participation.html?pollId=3ra4fhddizmwqap6)
  * [damninteresting](http://www.damninteresting.com/)
  * [euler](http://projecteuler.net/)
- * [sast2](http://isis.ku.dk/kurser/index.aspx?xslt=default&kursusid=26907)
+
+ku:
+
+ * [alg1](http://www.math.ku.dk/kurser/2007-08/blok4/alg1/)
+ * [isis](http://isis.ku.dk/)
 
 here:
 
