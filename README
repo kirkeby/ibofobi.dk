@@ -1,0 +1,5 @@
+Install the required packages:
+
+    easy_install 'markdown == 1.7'
+    easy_install 'SimpleTAL == 4.1'
+    easy_install 'resolver == 0.2.1'
