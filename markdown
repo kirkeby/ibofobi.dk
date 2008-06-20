@@ -23,6 +23,11 @@ def main(stdin, stdout):
     title = escape(lines[0].strip())
     text = ''.join(lines).decode('utf-8')
     content = markdown(text).encode('utf-8')
+    if not content:
+        # 14:45 < kirkeby> !lart markdown.py
+        # 14:47 < kirkeby> try: foo except: log('Buhuh!') ; return ''
+        # 14:47 < kirkeby> *GRR*
+        raise AssertionError('DIE, MARKDOWN, YOU STUPID FUCKING CUNT!')
 
     print >> stdout, template % locals()
 
