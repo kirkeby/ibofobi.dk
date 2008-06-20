@@ -1,4 +1,4 @@
-TARGET_PREFIX=../public_html/ibofobi.dk
+TARGET_PREFIX=./public_html/ibofobi.dk
 
 SOURCES=$(shell find pages -type f | egrep -v '~|/\.' | sed s,^pages,,) \
         $(addsuffix /index,$(addprefix /blog/archive/,$(shell blog/published)))
