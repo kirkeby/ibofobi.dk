@@ -40,8 +40,8 @@ def read_post(name):
     post['source'] = open(post['path']).read()
     lines = post['source'].split('\n', 2)
     post['title'] = lines[0].strip()
-    post['text'] = lines[-1].strip()
-    post['html'] = markdown(post['text']).decode('utf-8')
+    post['text'] = lines[-1].strip().decode('utf-8')
+    post['html'] = markdown(post['text'])
     return post
 
 index = read_index()
