@@ -4,12 +4,12 @@ Reading
 Underway
 --------
 
- * _The System of the World_, Neal Stephenson
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
  * _Programming Collective Intelligence_, Toby Segaran
 
 2008
 ----
+ * _The System of the World_, Neal Stephenson
  * _Good Omens_, Neil Gaiman & Terry Pratchett
  * _Stardust_, Neil Gaiman
  * _Against a Dark Background_, Iain M. Banks
@@ -26,6 +26,11 @@ Underway
  * _Blink_, Malcolm Gladwell
  * _The Satanic Verses_, Salman Rushdie
  * _Politikens Verdenshistorie (World History)_, Sven Skovmand
+ * _Rise of Endymion_, Dan Simmons
+ * _Endymion_, Dan Simmons
+ * _Fall of Hyperion_, Dan Simmons
+ * _Hyperion_, Dan Simmons
+ * _Olympos_, Dan Simmons
  * _Ilium_, Dan Simmons
  * _Foucaults Pendulum_, Umberto Eco
  * _Man bør tvivle om alt -- og tro på meget_, Peter Thielst (history of philosophy, danish)
