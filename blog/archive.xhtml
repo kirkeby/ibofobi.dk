@@ -6,9 +6,13 @@
 </head>
 <body>
 <h1 metal:fill-slot='heading'>All Rambling Rants</h1>
-<span metal:fill-slot='meta'><a href='/blog/'>about:me</a> is the
-rambling rants of <a href='/about/'>Sune Kirkeby</a>, on any number of
-subjects.</span>
+<span metal:fill-slot='meta'>The ramblings of
+<a href='/about/'>Sune Kirkeby</a>. See also
+<a href='../' rel='nofollow'>recent rambles</a>, or subscribe to a 
+<a href='../feeds/' rel='nofollow'>feed of rants</a> to get updates.
+Elsewhere: <a href='/stuff/'>bits of code</a>
+and <a href='http://del.icio.us/sune/'>links</a>.
+</span>
 <div metal:fill-slot='content'>
   <ul>
   <li tal:repeat='post posts'>
@@ -18,11 +22,6 @@ subjects.</span>
        tal:content='post/title'/>
   </li>
   </ul>
-
-  <hr/>
-    <div>See <a href='..'>recent ramblings</a>, or subscribe to a 
-    <a href='../feeds/'>feed of rants</a> to get updates.</div>
-  <hr/>
 </div>
 </body>
 </html>

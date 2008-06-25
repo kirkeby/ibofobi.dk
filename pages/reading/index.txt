@@ -6,9 +6,11 @@ Underway
 
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
  * _Programming Collective Intelligence_, Toby Segaran
+ * _Consider Phlebas_, Iain M. Banks
 
 2008
 ----
+ * _The Moon is a Harsh Mistress_, Robert A. Heinlein
  * _The System of the World_, Neal Stephenson
  * _Good Omens_, Neil Gaiman & Terry Pratchett
  * _Stardust_, Neil Gaiman
