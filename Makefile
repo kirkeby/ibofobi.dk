@@ -23,7 +23,7 @@ ${TARGET_PREFIX}/%.html: pages/%.txt html.xsl page.html metal markdown
 	@./markdown < $< | ./metal --xhtml-doctype | ./to-html > $@.work
 	@mv -f $@.work $@
 
-${TARGET_PREFIX}/blog/archive/%/index.html: blog/% html.xsl page.html metal
+${TARGET_PREFIX}/blog/archive/%/index.html: blog/% html.xsl page.html blog/post.xhtml blog/blog.py metal
 	@echo $<
 	@mkdir -p $(dir $@)
 	@./metal --xhtml-doctype --context 'post=blog:read_post("$(subst blog/,,$<)")' < blog/post.xhtml | ./to-html > $@.work
