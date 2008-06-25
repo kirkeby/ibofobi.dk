@@ -13,6 +13,7 @@ template = '''\
   <title metal:fill-slot='title'>%(title)s</title>
 </head>
 <body>
+  <h1 metal:fill-slot='heading'>%(title)s</h1>
   <div metal:fill-slot='content'>%(content)s</div>
 </body>
 </html>
@@ -21,7 +22,7 @@ template = '''\
 def main(stdin, stdout):
     lines = stdin.readlines()
     title = escape(lines[0].strip())
-    text = ''.join(lines).decode('utf-8')
+    text = ''.join(lines[2:]).decode('utf-8')
     content = markdown(text).encode('utf-8')
     if not content:
         # 14:45 < kirkeby> !lart markdown.py

@@ -1,0 +1,24 @@
+Stuff
+=====
+
+<dl>
+<dt><a href='django-ibofobi/'>Django Stuff</a></dt>
+<dd>A collection of useful
+<a href='http://www.djangoproject.org/'>Django</a>-related
+stuff.</dd>
+
+<dt><a href='mp3/'>Python MP3</a></dt>
+<dd>Some Python code to parse MP3 files and ID3 tags.</dd>
+
+<dt><a href='hurd-entropy/'><code>/dev/{,u}random</code>
+driver for GNU/Hurd</a></dt>
+<dd>A port of the Linux <code>/dev/{,u}random</code> driver to
+GNU/Hurd.</dd>
+
+<dt><a href='/download/portalfs.tar.gz'>user-space portals</a></dt>
+<dd>An user-space implementation of the old portals concept from BSD4.4;
+this is for UNIXen that dynamically link executables. If you have no
+idea what I am talking about you might want to read <a
+href='http://www.kohala.com/start/portals.ps'>Portals in 4.4BSD</a> by
+W. Richard Stevens and Jan-Simon Pendry.</dd>
+</dl>

@@ -1,0 +1,17 @@
+Ibofobi Django Stuff
+====================
+
+The ibofobi Django-related stuff includes:
+
+ * ibofobi.apps.blog; a simple one-user blog.
+ * ibofobi.apps.scryer; a simple page-view counter.
+ * <a href='/blog/archive/2005/09/django-vs-xhtml/'>XHTMLAsHTMLMiddleware</a>;
+   serve XHTML documents as valid HTML to non-XHTML web browsers.
+ * <a
+   href='/blog/archive/2005/09/django-developer-gadgets/'>developer_http.py</a>;
+   a one-request per process Django web-server
+ * <a href='/blog/archive/2005/11/django-doctest/'>django-test</a>;
+   a doctest, YAML and BeautifulSoup-based test-framework
+
+All the code lives in the git repository
+<a href='http://mel.ibofobi.dk/~sune/r/ibofobi.git'>http://mel.ibofobi.dk/~sune/r/ibofobi.git</a>.
