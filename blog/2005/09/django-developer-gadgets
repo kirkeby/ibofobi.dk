@@ -34,7 +34,7 @@ The second gadget is a middleware which munges `django.conf.settings.TEMPLATE_DI
     )
     TEMPLATE_DIRS = []
 
-And my my `settings.urls.devel` I have:
+And in my `settings.urls.devel` I have:
 
     (r'^admin/', include('django.conf.urls.admin')),
     (r'', include('settings.urls.main')),

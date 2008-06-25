@@ -45,66 +45,16 @@
 
 <body id='ibofobi'>
 <div id='bodywidth'>
-    <div id='masthead'>
-        <p><b>ibofobi</b> <i>sb</i>., -en, -er<br />
-        panisk angst for palindromer</p>
-    </div>
-
-    <div id='container'>
-        <a name='document-content'></a>
-        <div id='content'><metal:block define-slot='content'/></div>
-    </div>
-
-    <div id='sidebar'>
-        <img src='http://media.ibofobi.dk/monkey-happy.jpg'
-             width='130' height='130'
-             alt='My mood is "happy"' />
+    <metal:block define-slot='heading'/>
     
-        <b>ibofobi.dk</b>
-        <ul class='links'>
-        <li><a title='Site index'
-               href='/'>index</a></li>
-        <li><a title='Contact me'
-               href='/contact/'>contact me</a></li>
-        <li><a title='About me'
-               href='/about/'>about me</a></li>
-        </ul>
+    <hr/>
+    <span metal:define-slot='meta'>
+    <a href='/'>ibofobi.dk</a> is the blagotube home of
+    <a href='/about/'>Sune Kirkeby</a>.
+    </span>
+    <hr/>
 
-        <b>code</b>
-        <ul class='links'>
-        <li><a href='http://code.ibofobi.dk/public/'
-               title='Trac instance for my public code'>trac</a></li>
-        </ul>
-
-        <b>blog</b>
-        <ul class='links'>
-        <li><a title='Home of my blog "about:me"'
-               href='/blog/'>recent</a></li>
-        <li><a title='Archive of my blog'
-               href='/blog/archive/'>archive</a></li>
-        <li><a title='My del.icio.us link collection'
-               href='http://del.icio.us/sune/'>links</a></li>
-        <li><a title='Atom feed for my blog (for syndication)'
-               href='/blog/feeds/latest/'>syndicate</a></li>
-        <!--
-        <li><a title='Tags I use in my posts'
-               href='/blog/tags/'>tags</a></li>
-        <li><a title='Atom feeds for my blog (for syndication)'
-               href='/blog/feeds/'>syndicate</a></li>
-        -->
-        </ul>
-
-        <b>validate</b>
-        <ul class='links'>
-        <li><a href='http://validator.w3.org/check/referer'>html</a></li>
-        <li><a href='http://jigsaw.w3.org/css-validator/check/referer'>css</a></li>
-        <li><a href='http://feedvalidator.org/check?url=http://ibofobi.dk/blog/feeds/latest/'>atom</a></li>
-        </ul>
-    </div>
-    
-    <div id='footer'>
-        <p>All content copyright Sune Kirkeby.</p>
-    </div>
+    <metal:block define-slot='content'/>
 </div>
 </body>
 </html>
