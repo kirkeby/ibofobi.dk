@@ -11,7 +11,7 @@ The first is a web-server which re-exec's itself
 after every request, so that all resources are
 reloaded for every request. It has worked very well
 for me. It lives as `ibofobi.utils.developer_http.py`
-in `svn://ibofobi.dk/public/trunk/ibofobi/`.
+in `http://mel.ibofobi.dk/~sune/r/ibofobi.git`.
 
 You can either execute it directly, with `--bind`
 and `--port` (it defaults to all interfaces port

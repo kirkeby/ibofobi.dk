@@ -15,6 +15,6 @@ page without admin-links.
 This is good.
 
 It's in `ibofobi.middleware.cache` under
-`svn://ibofobi.dk/public/trunk/ibofobi/`, now I just
+`http://mel.ibofobi.dk/~sune/r/ibofobi.git`, now I just
 need to figure out, if it is interesting enough to
 include in the official distribution.

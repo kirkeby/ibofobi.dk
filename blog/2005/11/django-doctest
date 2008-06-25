@@ -34,9 +34,9 @@ This asserts that the title of the post created from the fixture `hello_world` h
 The `browser` object is a helper which invokes the Django handler and parses
 the result with `BeautifulSoup`.
 
-If you want to try `ibofobi.utils.test` get it from subversion with:
+If you want to try `ibofobi.utils.test` get it with:
 
-    svn co svn://ibofobi.dk/public/trunk/ibofobi/
+    git clone http://mel.ibofobi.dk/~sune/r/ibofobi.git
 
 And run the `django-test` script, which will run tests in each application in 
 `INSTALLED_APPS`. Both `PyYAML` and `BeautifulSoup` are bundled, so you don't have to install the separately.

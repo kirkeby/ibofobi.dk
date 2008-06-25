@@ -9,4 +9,4 @@ Djangos cache-middleware is oblivious to the Vary
 header, it will _not_ work with GZipMiddleware...)
 
 It is in ibofobi.middleware.gzip under
-`svn://ibofobi.dk/public/trunk/ibofobi/`. Enjoy.
+`http://mel.ibofobi.dk/~sune/r/ibofobi.git`. Enjoy.

@@ -9,4 +9,4 @@ The first app is a blog, with posts and categories (which drives this blog...). 
 
 The second app is a personal calendar-type-thingie, it's stille very rough around the edges, but it helps me to keep track things I have to remember...
 
-They live in `svn://mel.ibofobi.dk/public/trunk/ibofobi/` under `src/apps/`, I still haven't gotten around to writing a `setup.py`, and the templates need a bit of cleaning up.
+They live in `http://mel.ibofobi.dk/~sune/r/ibofobi.git` under `src/apps/`, I still haven't gotten around to writing a `setup.py`, and the templates need a bit of cleaning up.

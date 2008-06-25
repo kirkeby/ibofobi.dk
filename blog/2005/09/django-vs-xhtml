@@ -25,4 +25,5 @@ So, since this is such a short and sweet piece of code, here it is:
             return response
 
 
-It is also available as `ibofobi.middleware.xhtml` in `svn://mel.ibofobi.dk/public/trunk/ibofobi/`.
+It is also available as `ibofobi.middleware.xhtml`
+in `http://mel.ibofobi.dk/~sune/r/ibofobi.git`.
