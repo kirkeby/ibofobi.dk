@@ -4,12 +4,12 @@ Reading
 Underway
 --------
 
- * _Programming Collective Intelligence_, Toby Segaran
  * _The Wasp Factory_, Iain Banks
  * _Local Breads_, Daniel Leader
 
 2008
 ----
+ * _Programming Collective Intelligence_, Toby Segaran
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
  * _Consider Phlebas_, Iain M. Banks
  * _The Moon is a Harsh Mistress_, Robert A. Heinlein
