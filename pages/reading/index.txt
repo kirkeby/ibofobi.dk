@@ -4,11 +4,12 @@ Reading
 Underway
 --------
 
- * _The Wasp Factory_, Iain Banks
+ * _Do Androids Dream of Electric Sheep?_, Philip K. Dick
  * _Local Breads_, Daniel Leader
 
 2008
 ----
+ * _The Wasp Factory_, Iain Banks
  * _Programming Collective Intelligence_, Toby Segaran
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
  * _Consider Phlebas_, Iain M. Banks
