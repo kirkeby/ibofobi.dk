@@ -4,11 +4,15 @@ Reading
 Underway
 --------
 
- * _Do Androids Dream of Electric Sheep?_, Philip K. Dick
- * _Local Breads_, Daniel Leader
+ * _The War of The Worlds_, H. G. Wells
 
 2008
 ----
+ * _I Am Legend_, Richard Matheson
+ * _The Adventures of Huckleberry Finn_, Mark Twain
+ * _The Adventures of Tom Sawyer_, Mark Twain
+ * _Do Androids Dream of Electric Sheep?_, Philip K. Dick
+ * _Local Breads_, Daniel Leader
  * _The Wasp Factory_, Iain Banks
  * _Programming Collective Intelligence_, Toby Segaran
  * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
