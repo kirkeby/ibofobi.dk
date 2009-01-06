@@ -3,7 +3,9 @@
 
  * [damninteresting](http://www.damninteresting.com/)
  * [euler](http://projecteuler.net/)
- * [todo](http://del.icio.us/sune/todo)
+ * [delicious](htpp://delicious.com/sune)
+[todo](http://del.icio.us/sune/todo)
+[tags](http://delicious.com/tags/sune)
 
 forums:
 
