@@ -22,7 +22,7 @@ news and odds:
 
  * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
  * [slashdot](http://slashdot.org/)
- * [prog](http://programming.reddit.com/new)
+ * [prog](http://www.reddit.com/r/programming/)
  * [y-c](http://news.ycombinator.com/news)
  * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
 
