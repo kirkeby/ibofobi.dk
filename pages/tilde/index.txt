@@ -34,6 +34,7 @@ foo:
  * [appengine](https://appengine.google.com/a/ibofobi.dk/)
  * [fjæsbog](http://www.facebook.com/)
  * [twitter](http://twitter.com/)
+ * [github](http://guthub.com/)
  * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
  * [reader](https://www.google.com/reader/view/)
