@@ -33,6 +33,7 @@ foo:
  * [google apps](https://www.google.com/a/ibofobi.dk/)
  * [appengine](https://appengine.google.com/a/ibofobi.dk/)
  * [fjæsbog](http://www.facebook.com/)
+ * [twitter](http://twitter.com/)
  * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
  * [reader](https://www.google.com/reader/view/)
