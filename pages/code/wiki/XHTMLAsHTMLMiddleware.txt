@@ -1,0 +1,32 @@
+XHTMLAsHTMLMiddleware
+=====================
+
+This is a piece of middleware for [Django](http://www.djangoproject.com/)
+which will let you serve all your pages as XHTML, with the correct
+Content-Type header `application/xhtml+xml`, and automagically have the
+pages served as HTML 4.01 Strict with Content-Type `text/plain` to browser
+that don't understand XHTML.
+
+Code
+----
+
+The code is available on [github](http://github.com/kirkeby/django-stuff/).
+
+Installation
+------------
+
+*Note:* If you use the GZipMiddleware the XHTMLAsHTMLMiddleware *must*
+come after the GZipMiddleware in your `MIDDLEWARE_CLASSES`.
+
+License
+-------
+
+The code is licensed under the
+[X11 License](http://www.opensource.org/licenses/mit-license.php)
+(aka the MIT License).
+
+WSGI-version
+------------
+
+There is a
+[WSGI-version of the middleware](http://pypi.python.org/pypi/wsgixhtml2html/).

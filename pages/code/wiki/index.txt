@@ -1,0 +1,7 @@
+My Projects
+===========
+
+ * [Django-related stuff](ProjectIbofobi.html)
+ * [myTunes music jukebox](ProjectMyTunes.html)
+ * [Python MP3 Tools](ProjectPythonMP3.html)
+ * [Python SMTP Server](ProjectSMTP.html)

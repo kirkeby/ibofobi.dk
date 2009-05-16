@@ -1,0 +1,63 @@
+ibofobi.apps.scryer
+===================
+
+Scryer is a page-view counter for your Django site, I wrote it after getting
+fed up with webalizer, and noticing how utterly cool
+[Mint](http://www.haveamint.com/) is. It uses XMLHttpRequest to call back for
+every page-view; browsers without javascript are not currently supported,
+although it should be pretty simple to implement.
+
+It's still very pre-alpha, mostly because it has none of the cool
+display-features of Mint. For now there are views for (the links are to
+scrapes of the views):
+
+ * [referrers](http://media.ibofobi.dk/scryer/scrapes/referrers/)
+ * [top pages](http://media.ibofobi.dk/scryer/scrapes/top-pages/)
+ * [sessions](http://media.ibofobi.dk/scryer/scrapes/sessions/) (aka visits)
+ * [live pages](http://media.ibofobi.dk/scryer/scrapes/page-views/) (aka last 10 page-views)
+
+Installing
+==========
+
+Get the source
+--------------
+
+I have not yet bothered with packaging scryer, so if you want to play, you
+have to get the source from the
+[github](http://github.com/kirkeby/django-stuff/).
+
+Install the application
+-----------------------
+
+Insert into
+
+ * `INSTALLED_APPS`:
+
+        "ibofobi.apps.scryer"
+ * `urls/main`:
+
+        (r'^scryer/', include('ibofobi.apps.scryer.urls.public')),
+ * `urls/admin`:
+
+        (r'^scryer/generated/', include('ibofobi.apps.scryer.urls.admin')),
+
+And run:
+
+    django-admin.py install scryer
+
+
+Copy `src/ibofobi/apps/scryer/media/scryer/pageview.js` into your
+media-directory and include it 
+(`<script type='text/javascript' src='.../pageview.js'></script>`)
+in the top of all the pages you want to count page-views for.
+
+Upgrading from fresh
+--------------------
+
+The models changed from fresh to scryer, if you want your old page-views still
+follow UpgradeFreshToScryer.
+
+Rejoice
+-------
+
+Look at `/scryer/generated/referrers/` on your admin-site. Rejoice! :)

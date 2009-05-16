@@ -1,0 +1,6 @@
+myTunes
+-------
+
+Music librarian and "frontend" for moc (music on console).
+
+Get it from [github](http://github.com/kirkeby/mytunes/).

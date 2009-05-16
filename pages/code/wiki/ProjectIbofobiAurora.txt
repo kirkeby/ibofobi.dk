@@ -1,0 +1,6 @@
+Aurora
+======
+
+A web-based bittorrent client for Django. Go look at
+[the page scrapes](http://media.ibofobi.dk/aurora/scrapes/) and
+[source:trunk/ibofobi/src/ibofobi/apps/aurora/ the code].

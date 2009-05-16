@@ -1,0 +1,113 @@
+ibofobi.apps.blog
+=================
+
+A simple one-person blog. Included batteries:
+
+ * Posts written in [Markdown](http://daringfireball.net/projects/markdown/)
+ * Categories
+ * Comments written in a safe subset of Markdown
+ * Latest-posts feeds (both overall and per-category)
+
+License
+=======
+
+The blog software is licensed under the [X11 license](http://www.opensource.org/licenses/mit-license.php) (aka MIT license);
+the markdown module which the blog uses for formatting is licensed under the GPL version 2.
+
+Installation
+============
+
+Get the code
+------------
+
+The first thing you need to do is get the code, you can either get the bleeding edge from
+subversion (it's no more bleeding than it can run my own blog :). In subversion it is a
+under `svn://ibofobi.dk/public/trunk/ibofobi/`. After you have the code, you need to
+put it in your `PYTHON_PATH`, you can either do this with the included `setup.py`,
+or you can just add `ibofobi/src` to `PYTHON_PATH`.
+
+Alternatively, you can install it as a Python egg from
+[here](http://media.ibofobi.dk/download/django/) (beware though, this requires
+the
+[setuptools](http://peak.telecommunity.com/DevCenter/setuptools#installing-setuptools)
+package) you just download the latest `blog` egg, and put it somewhere in your
+`PYTHONPATH`, and add this to your settings:
+
+    from pkg_resources import require
+    require("blog")
+
+Add to your Django project
+--------------------------
+
+Now you must add the app to your Django project, to do this you must add
+
+    'ibofobi.apps.blog',
+
+to your `INSTALLED_APPS` setting. And make sure that either the `egg`-template
+or the `app_directory`-template loader is in `TEMPLATE_LOADERS` (depending on whether you
+installed as an egg or not).
+
+Finally you should add 
+
+    (r'^blog/', include('ibofobi.apps.blog.urls.blog')),
+to your URL-settings, and define the following variables in your settings
+
+    BLOG_URL = '/blog'
+    BLOG_AUTHOR = 'Jane Dough' # sic :)
+    BLOG_TITLE = 'My First Blog(tm)'
+    BLOG_TAG_FORMAT = 'tag:example.com,%(year)d-%(month)02d-%(day)02d:/blog/archive/%(year)d/%(month)02d/%(day)02d/%(slug)s/'
+
+Install model
+-------------
+
+Now you are ready to
+
+    django-admin.py install blog
+
+and everything should play.
+
+Post
+----
+
+Now you can go to your admin-page, in under Blog, Posts, Add Post and make a
+new post.  To make it public, remember to set the "Listed"-flag (this is
+useful the other way, if you want to make drafts of your posts.)
+
+Templates
+=========
+
+You probably want your blog to look more interesting than the default
+templates (or at least different ;). To accomplish this you create a
+`blog/base` template, which should define a `pagetitle` and `content` block
+for the other blog-templates to fill. The default `blog/base` looks like this:
+
+    {% extends "base" %}
+    {% block title %}{% block pagetitle %}{% endblock %} [{{ settings.BLOG_TITLE }}]{% endblock %}
+
+If you want to do more extensive changes to the templates, you can look at the 
+[templates in subversion](http://code.ibofobi.dk/public/browser/trunk/ibofobi/src/ibofobi/apps/blog/templates/blog/).
+
+Feedback
+========
+
+I'd love to hear from you, if you think the code is useful. So, drop me a mail (sune.kirkeby@gmail.com), or just add a blurb below here, if
+you feel like it :)
+
+Slightly incompatible with latest Django code
+---------------------------------------------
+
+If you are using django newer than revision [1443] you will get a errors about register_tag and escape.  You'll need to follow the advice at [Template system changes](http://code.djangoproject.com/wiki/BackwardsIncompatibleChanges#Templatesystemchanges)(http://code.djangoproject.com/changeset/1443) for registering and for filters.
+
+Specifically, edit ibofobi/apps/blog/templatetags/safe_markdown.py and in the method pop_paragraph replace the line 
+
+    return '<p>' + render_paragraph(escape('\n'.join(p), None)) + </p>
+with 
+
+    return '<p>' + render_paragraph(escape('\n'.join(p))) + </p>
+eliminating the ", None". Next, replace the line at the end 
+
+    template.register_filter('safe_markdown', render, False)
+with 
+
+    register = template.Library()
+    register.filter('safe_markdown', render)

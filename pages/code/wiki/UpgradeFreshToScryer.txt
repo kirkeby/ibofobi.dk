@@ -1,0 +1,34 @@
+Upgrading fresh to scryer
+-------------------------
+
+Run this SQL to get all your page-views over:
+
+    insert into scryer_pageviews(ip_address, referrer, served, session_key, site_id, url, user_agent)
+           (select ip_address, referrer, served, 'None', 1, url, user_agent from fresh_pageviews);
+
+And run this Python script to fix the sessions:
+
+    from django.models.scryer import pageviews
+
+    for pv in pageviews.get_list(session_key__exact='None', order_by=['served']):
+        older = pageviews.get_list(served__lt=pv.served,
+                                   served__gt=pv.served-pageviews.session_lifetime,
+                                   ip_address__exact=pv.ip_address,
+                                   limit=1)
+
+        if older:
+            sk = older[0].session_key
+        else:
+            sk = pageviews.get_new_session_key()
+
+        pv.session_key = sk
+        pv.save()
+
+Also, you might want to clean out your old data sometime:
+
+    delete from auth_permissions where package='fresh';
+    delete from content_types where package='fresh';
+    delete from packages where name='fresh';
+    drop table fresh_pageviews;
+    drop sequence fresh_pageviews_id_seq;
+(The last is for postgresql.)

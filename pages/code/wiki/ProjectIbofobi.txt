@@ -1,0 +1,21 @@
+Django Stuff(tm)
+================
+
+A collection of useful [Django](http://www.djangoproject.org/)-related stuff.
+
+Apps
+----
+
+ * [blog](ProjectIbofobiBlog.html); a simple one-user blog
+ * [scryer](ProjectIbofobiScryer.html); a page-view counter
+
+Middleware
+----------
+
+ * [Serve XHTML as HTML to non-XHTML-aware clients](XHTMLAsHTMLMiddleware.html)
+
+Utils
+-----
+
+ * A one-request per process [Django web-server](http://ibofobi.dk/blog/archive/2005/09/10/django-developer-gadgets/)
+ * A doctest, YAML and BeautifulSoup-based [test framework](http://ibofobi.dk/blog/archive/2005/11/08/django-doctest/)

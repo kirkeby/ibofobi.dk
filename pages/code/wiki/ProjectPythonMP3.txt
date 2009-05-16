@@ -1,0 +1,23 @@
+Python MP3 Tools
+----------------
+
+This is a library for reading MP3-files in Python and some tools for
+working with MP3-files on the command-line. At present the library can
+read MP3-frame meta-data and has support for ID3v1 tags.
+
+The library is very strict in what MP3-files it can read,
+unforunately many MP3-files that exist in the wild are broken in one or
+more ways (most MP3 players just skip past bad data, without ever
+mentioning it). So, included with the library is a tool to extract all
+the good data (MP3 frames and all ID3 tags) from MP3-files.
+
+Code
+----
+
+Get it from [github](http://github.com/kirkeby/python-mp3).
+
+License
+-------
+
+The library and tools are licensed under the GNU General Public
+License, and is copyright &copy; 2003-2004 Sune Kirkeby.
