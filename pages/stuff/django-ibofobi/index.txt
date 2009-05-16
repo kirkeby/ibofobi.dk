@@ -13,5 +13,4 @@ The ibofobi Django-related stuff includes:
  * <a href='/blog/archive/2005/11/django-doctest/'>django-test</a>;
    a doctest, YAML and BeautifulSoup-based test-framework
 
-All the code lives in the git repository
-<a href='http://mel.ibofobi.dk/~sune/r/ibofobi.git'>http://mel.ibofobi.dk/~sune/r/ibofobi.git</a>.
+All the code lives on [github](http://github.com/kirkeby/django-stuff/).

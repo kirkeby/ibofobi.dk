@@ -20,6 +20,7 @@ comics:
 
 news and odds:
 
+ * [lwn](http://lwn.net/)
  * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
  * [slashdot](http://slashdot.org/)
  * [prog](http://www.reddit.com/r/programming/)
@@ -34,7 +35,7 @@ foo:
  * [appengine](https://appengine.google.com/a/ibofobi.dk/)
  * [fjæsbog](http://www.facebook.com/)
  * [twitter](http://twitter.com/)
- * [github](http://guthub.com/)
+ * [github](http://github.com/)
  * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
  * [reader](https://www.google.com/reader/view/)

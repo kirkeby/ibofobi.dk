@@ -20,21 +20,7 @@ Installation
 Get the code
 ------------
 
-The first thing you need to do is get the code, you can either get the bleeding edge from
-subversion (it's no more bleeding than it can run my own blog :). In subversion it is a
-under `svn://ibofobi.dk/public/trunk/ibofobi/`. After you have the code, you need to
-put it in your `PYTHON_PATH`, you can either do this with the included `setup.py`,
-or you can just add `ibofobi/src` to `PYTHON_PATH`.
-
-Alternatively, you can install it as a Python egg from
-[here](http://media.ibofobi.dk/download/django/) (beware though, this requires
-the
-[setuptools](http://peak.telecommunity.com/DevCenter/setuptools#installing-setuptools)
-package) you just download the latest `blog` egg, and put it somewhere in your
-`PYTHONPATH`, and add this to your settings:
-
-    from pkg_resources import require
-    require("blog")
+The code is available on [github](http://github.com/kirkeby/django-stuff/).
 
 Add to your Django project
 --------------------------
