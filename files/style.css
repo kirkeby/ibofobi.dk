@@ -66,14 +66,19 @@ div.update {
     margin-right: 2em;
 }
 
-.leftie {
-    float: left;
+.left { float: left; }
+.right { float: right; }
+.padded {
     padding: .5em;
 }
-.big-small-caps {
+.big {
     font-size: 150%;
+}
+.small-caps {
     font-family: "Georgia", serif;
     font-variant: small-caps;
+}
+.silent {
     color: gray;
 }
 

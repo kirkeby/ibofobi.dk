@@ -15,7 +15,7 @@
 </span>
 <div metal:fill-slot='content' id='recent-posts'>
   <div tal:repeat='post posts'>
-    <div class='leftie big-small-caps'>
+    <div class='left padded big small-caps silent'>
       <span tal:replace='python:post["stamp"].strftime("%d. %b")'/>
       <br/>
       <span tal:replace='python:post["stamp"].strftime("%Y")'/>
