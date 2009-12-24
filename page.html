@@ -6,35 +6,21 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       metal:define-macro='page'
       lang="en">
-
 <head>
     <title metal:define-slot='title'>about:me</title>
     <meta name='author' content='Sune Kirkeby' />
-
     <meta name='ICBM' content='55.7206,12.5371' />
 
     <link rel='icon'
           href='http://media.ibofobi.dk/favicon.ico' />
     <link rel='shortcut icon'
           href='http://media.ibofobi.dk/favicon.ico' />
-    <link rel='stylesheet'
-          type='text/css' href='http://media.ibofobi.dk/layout.css' />
-    <link rel='stylesheet'
-          type='text/css' href='http://media.ibofobi.dk/style.css' />
-
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        var pageTracker = _gat._getTracker("UA-3678459-1");
-        pageTracker._initData();
-        pageTracker._trackPageview();
-    </script>
+    <link rel='stylesheet' type='text/css'
+          href='http://media.ibofobi.dk/style.css' />
 
     <!-- Google Sitemaps -->
-    <meta name="verify-v1" content="8u4Gp82fIVBEO0b4Rm7jNQR54uxmr7M4r+gDvFz5wbM=" />
+    <meta name="verify-v1"
+          content="8u4Gp82fIVBEO0b4Rm7jNQR54uxmr7M4r+gDvFz5wbM=" />
 
     <!-- OpenID -->
     <link rel="openid.server"
@@ -45,17 +31,31 @@
 
 <body id='ibofobi'>
 <div id='bodywidth'>
+    <hr/>
+    <div id='meta'>
+      <span metal:define-slot='meta'>
+        The blagotube home of <a href='/about/'>Sune Kirkeby</a>. Here are
+        <a href='/blog/'>rambling rants</a> and
+        <a href='/stuff/'>some bits of code</a>.  Also, you can
+        <a href='/contact/' rel='nofollow'>contact me</a>.
+      </span>
+    </div>
+    <hr/>
+
     <metal:block define-slot='heading'/>
-    
-    <hr/>
-    <span metal:define-slot='meta'>
-    The blagotube home of <a href='/about/'>Sune Kirkeby</a>. Here are
-    <a href='/blog/'>rambling rants</a>
-    and <a href='/stuff/'>some bits of code</a>.
-    Also, you can <a href='/contact/' rel='nofollow'>contact me</a>.</span>
-    <hr/>
 
     <metal:block define-slot='content'/>
 </div>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3678459-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
 </body>
 </html>

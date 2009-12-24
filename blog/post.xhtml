@@ -13,6 +13,11 @@
     <span tal:content='post/date'>sometime</span>.
   </span>
   <div metal:fill-slot='content'>
+    <div class='leftie big-small-caps'>
+      <span tal:replace='python:post["stamp"].strftime("%d. %b")'/>
+      <br/>
+      <span tal:replace='python:post["stamp"].strftime("%Y")'/>
+    </div>
     <div tal:replace='structure post/html'/>
 
     <hr/>

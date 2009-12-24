@@ -1,0 +1,52 @@
+/* Stolen from http://diveintomark.org/public/2004/05/feed2.css */
+
+/* NOTE: This still exhibits some serious display issues in IE, what a surprise.
+         Then again, the main site barely tolerates IE in the first place, so whatever. */
+
+feed {
+  display: block;
+  width: 688px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-bottom: 1em;
+  font-size: 90%;
+  background-color: #fff;
+  color: #222;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+info {
+  margin-top: 1em;
+  padding: 0.2em;
+  display: block;
+  background-color: yellow;
+  border: thin solid black;
+  text-align: left;
+}
+
+title, tagline, author, copyright, generator, content, created, issued, modified, id, subject {
+  display: none;
+}
+
+entry {
+  display: block;
+  margin-top: 1em;
+}
+
+entry title {
+  display: block;
+  clear: right;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Helvetica, sans-serif;
+/*  text-align: left;*/
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+entry summary {
+  display: block;
+/*  text-align: left;*/
+}

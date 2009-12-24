@@ -32,13 +32,13 @@ ${TARGET_PREFIX}/blog/archive/%/index.html: blog/% html.xsl page.html blog/post.
 		< blog/post.xhtml | ./to-html > $@.work
 	@mv -f $@.work $@
 
-${TARGET_PREFIX}/blog/archive/index.html: blog/index blog/archive.xhtml blog/blog.py $(addprefix blog/,$(shell blog/published))
+${TARGET_PREFIX}/blog/archive/index.html: blog/index html.xsl page.html blog/archive.xhtml blog/blog.py $(addprefix blog/,$(shell blog/published))
 	@echo blog/archive/
 	@./metal --xhtml-doctype --context 'posts=blog:all()' \
 		< blog/archive.xhtml | ./to-html > $@.work
 	@mv -f $@.work $@
 
-${TARGET_PREFIX}/blog/index.html: blog/index blog/recent.xhtml blog/blog.py
+${TARGET_PREFIX}/blog/index.html: blog/index html.xsl page.html blog/recent.xhtml blog/blog.py
 	@echo blog/
 	@./metal --xhtml-doctype --context 'posts=blog:recent()' \
 		< blog/recent.xhtml | ./to-html > $@.work
