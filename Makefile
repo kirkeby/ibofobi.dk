@@ -1,16 +1,20 @@
-TARGET_PREFIX=./public_html/ibofobi.dk
+TARGET_PREFIX=./dist
 
-SOURCES=$(shell find pages -type f | egrep -v '~|/\.' | sed s,^pages,,) \
+SOURCES=$(shell find pages -type f | egrep 'html|txt' | egrep -v '~|/\.' | sed s,^pages,,) \
         $(addsuffix /index,$(addprefix /blog/archive/,$(shell blog/published)))
 PAGES=$(addsuffix .html, $(basename ${SOURCES}))
 TARGETS=$(addprefix ${TARGET_PREFIX},${PAGES}) \
 	${TARGET_PREFIX}/blog/index.html \
 	${TARGET_PREFIX}/blog/archive/index.html \
-	${TARGET_PREFIX}/blog/feeds/latest/index.xml
+	${TARGET_PREFIX}/blog/feeds/latest/index.xml \
+	${TARGET_PREFIX}/stuff/curriculum-vitae/cv.pdf
 
 .PHONY: all
 
 all: ${TARGETS}
+
+${TARGET_PREFIX}/%: pages/%
+	@cp -f $^ $@
 
 ${TARGET_PREFIX}/%.html: pages/%.html html.xsl page.html metal
 	@echo $<
