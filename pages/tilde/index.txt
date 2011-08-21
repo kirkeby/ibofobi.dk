@@ -24,7 +24,7 @@ news and odds:
  * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
  * [slashdot](http://slashdot.org/)
  * [prog](http://www.reddit.com/r/programming/)
- * [y-c](http://news.ycombinator.com/news)
+ * [y-c](https://news.ycombinator.com/news)
  * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
 
 foo:
@@ -33,9 +33,9 @@ foo:
  * [gmail](https://mail.google.com/a/ibofobi.dk/)
  * [google apps](https://www.google.com/a/ibofobi.dk/)
  * [appengine](https://appengine.google.com/a/ibofobi.dk/)
- * [fjæsbog](http://www.facebook.com/)
- * [twitter](http://twitter.com/)
- * [github](http://github.com/)
+ * [fjæsbog](https://www.facebook.com/)
+ * [twitter](https://twitter.com/)
+ * [github](https://github.com/)
  * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
  * [reader](https://www.google.com/reader/view/)
