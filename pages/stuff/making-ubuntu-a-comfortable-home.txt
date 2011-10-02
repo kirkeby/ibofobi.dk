@@ -3,14 +3,16 @@ Making Ubuntu a Comfortable Home
 
  * Add Medibuntu repository:
 
-        sudo wget http://www.medibuntu.org/sources.list.d/intrepid.list --output-document=/etc/apt/sources.list.d/medibuntu.list
-        sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update
+        sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
+        sudo apt-get --quiet update
+        sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
+        sudo apt-get --quiet update
 
  * Install packages needed by sane people:
 
-        sudo apt-get install vim zsh mplayer-nogui prism non-free-codecs libdvdcss2
+        sudo apt-get install vim zsh mplayer non-free-codecs libdvdcss2
 
- * Disable Gnome and QT's built-in input handling:
+ * Disable Gnome and QT's built-in input handling (or not?!):
 
         mkdir -p ~/.xinput.d ; ln -sf /etc/X11/xinit/xinput.d/default-xim ~/.xinput.d/all_ALL
         cp /usr/share/X11/locale/en_US.UTF-8/Compose .XCompose
