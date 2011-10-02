@@ -3,9 +3,8 @@
 
  * [damninteresting](http://www.damninteresting.com/)
  * [euler](http://projecteuler.net/)
- * [delicious](http://delicious.com/sune)
-[todo](http://delicious.com/sune/todo)
-[tags](http://delicious.com/tags/sune)
+ * [pinboard](http://pinboard.in/u:sune/)
+[todo](http://pinboard.in/u:sune/t:todo/)
 
 forums:
 
