@@ -6,6 +6,7 @@
  * [pinboard](http://pinboard.in/u:sune/)
 [todo](http://pinboard.in/u:sune/t:todo/)
 [unread](http://pinboard.in/u:sune/unread/)
+ * [trello](https://trello.com/)
 
 forums:
 
