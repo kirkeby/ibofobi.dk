@@ -19,6 +19,9 @@ Making Ubuntu a Comfortable Home
 
  * Change CapsLock to be the Compose-key (in Pref/Keyboard/...).
 
+ * Fix it so alt + right-button is resize-window, in gconf-editor enable
+   /apps/metacity/general/resize_with_right_button.
+
  * Add the following to <code>~/.xsessionrc</code>:
 
         . ~/.zshenv
