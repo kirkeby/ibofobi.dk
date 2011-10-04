@@ -5,6 +5,8 @@
  * [euler](http://projecteuler.net/)
  * [pinboard](http://pinboard.in/u:sune/)
 [todo](http://pinboard.in/u:sune/t:todo/)
+[tobuy](http://pinboard.in/u:sune/t:tobuy/)
+[tocook](http://pinboard.in/u:sune/t:tocook/)
 [unread](http://pinboard.in/u:sune/unread/)
  * [trello](https://trello.com/)
 
