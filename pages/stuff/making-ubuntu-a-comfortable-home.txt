@@ -25,3 +25,9 @@ Making Ubuntu a Comfortable Home
  * Add the following to <code>~/.xsessionrc</code>:
 
         . ~/.zshenv
+
+Optional Changes
+----------------
+
+ * Change the Documents, Music and Pictures folders to their Dropbox-paths in
+   ``~/.config/user-dirs.dirs
