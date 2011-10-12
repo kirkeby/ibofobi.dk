@@ -31,3 +31,7 @@ Optional Changes
 
  * Change the Documents, Music and Pictures folders to their Dropbox-paths in
    ``~/.config/user-dirs.dirs
+
+ * Kill avahi.
+    sudo dpkg-divert --add --local --rename /usr/sbin/avahi-daemon
+    sudo pkill avahi
