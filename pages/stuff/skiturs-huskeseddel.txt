@@ -4,6 +4,7 @@ Min helt egen huskeseddel til skitur
 Skiting:
  * Skistøvler
  * Hjelm
+ * Goggles + klud
  * Hue
  * Vanter
  * Handsker
@@ -13,6 +14,7 @@ Skiting:
  * Tynd og tyk fleece
  * Skibukser
  * Skijakke
+ * Skisokker
  * Solcreme
  * Læbe-næse-solstift
  * Kleenex
@@ -48,6 +50,6 @@ Papirting:
  * Billede til liftkort?
 
 Underholdningsting:
- * iPod
  * Bøger / eReader
  * Notesblok + Skriveting?
+ * Stikdåse, opladere
