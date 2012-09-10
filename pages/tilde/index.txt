@@ -29,6 +29,7 @@ news and odds:
  * [slashdot](http://slashdot.org/)
  * [reddit](http://www.reddit.com/)
  * [yc.us](https://news.ycombinator.com/)
+ * [lobsters](https://lobste.rs/)
  * [yc.eu](http://hackful.com/)
  * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
 
