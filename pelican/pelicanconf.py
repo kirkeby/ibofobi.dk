@@ -24,7 +24,8 @@ STATIC_SAVE_AS = 'static/{path}'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 
-DIRECT_TEMPLATES = ['tags', 'categories', 'archives']
+DIRECT_TEMPLATES = ['blog/index', 'tags', 'categories', 'archives']
+PAGINATED_DIRECT_TEMPLATES = ['blog/index']
 
 # Pelican only understands md/rst 'pages', so we have to tell it to that html
 # means it's a template-page.
