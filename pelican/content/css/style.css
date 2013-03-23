@@ -85,9 +85,11 @@ div.update {
 }
 
 .silent a {
+    color: gray;
     text-decoration: none;
 }
 .silent a:hover {
+    color: gray;
     text-decoration: underline;
 }
 

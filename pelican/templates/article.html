@@ -18,12 +18,14 @@
   
   <footer class="post-info silent">
     This post was written by {{ article.author }} on
-    <abbr class="published" title="{{ article.date.isoformat() }}">
-      {{ article.date.strftime('%Y-%m-%d') }}
-    </abbr>, and claimed to be mostly about
-    <a href='{{ SITEURL }}/blog/category/{{ article.category }}/'>
-      {{ article.category }}
-    </a>.
+    <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.date.strftime('%Y-%m-%d') }}</abbr>,
+    and claimed to be mostly about
+    <a href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a>.
+    {% if article.tags %}
+      Also, it has these tags:
+      {% for tag in article.tags %}
+        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}.
+      {% endif %}
   </footer>
 </section>
 {% endblock %}
