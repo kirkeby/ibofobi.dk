@@ -16,7 +16,7 @@ FILES_TO_COPY = [
     ('pages/stuff/curriculum-vitae/cv.pdf', 'stuff/curriculum-vitae/cv.pdf'),
 ]
 
-STATIC_PATHS = ['css', 'js', 'images']
+STATIC_PATHS = ['css', 'js', 'images', 'files']
 STATIC_SAVE_AS = 'static/{path}'
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
