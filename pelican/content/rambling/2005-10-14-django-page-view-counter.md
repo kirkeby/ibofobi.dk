@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-10-14:/blog/archive/2005/10/14/django-page-view-counter/
 Title: Django page-view counter
 Date: 2005-10-14
 

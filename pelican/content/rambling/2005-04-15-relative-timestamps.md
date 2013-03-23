@@ -1,4 +1,5 @@
-Title: Relative timestamps, redux
+Id: tag:ibofobi.dk,2005-04-15:blog/2005/04/15/recent-changes
+Title: Relative timestamps, part II
 Date: 2005-04-15
 
 All timestamps here now have a relative `title`-attribute, if you have

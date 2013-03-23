@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2004-06-03:2004/06/03/the-feed-is-dead-long-live-the-feed
 Title: The Feed is dead, long live The Feed!
 Date: 2004-06-03
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2004-01-07:2004/01/07/dear-diary
 Title: Oh, dear (diary)!
 Date: 2004-01-08
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-29:/blog/archive/2005/09/29/httpmiddleware/
 Title: HTTPMiddleware
 Date: 2005-09-29
 

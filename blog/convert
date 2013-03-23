@@ -7,6 +7,7 @@ for post in blog.all():
     path = '../pelican/content/rambling/' + slug + '.md'
     with open(path, 'w') as f:
         f.write('\n'.join([
+            'Id: ' + post['tag'],
             'Title: ' + post['title'],
             'Date: ' + post['date'],
             '',

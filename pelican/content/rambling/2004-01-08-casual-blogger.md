@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2004-01-07:2004/01/07/casual-blogger
 Title: I'm a casual blogger
 Date: 2004-01-08
 

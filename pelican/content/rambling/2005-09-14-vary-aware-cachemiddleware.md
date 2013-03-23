@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-14:/blog/archive/2005/09/14/vary-aware-cachemiddleware/
 Title: Vary-aware CacheMiddleware
 Date: 2005-09-14
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2003-12-02:2003/12/02/pathological-identifiers
 Title: Line-wrapping when soft hyphenation is wrong
 Date: 2003-12-02
 

@@ -1,3 +1,4 @@
+Id: http://ibofobi.dk/blog/archive/2004/02/29/tar-pit-quote
 Title: Interesting Brooks quote
 Date: 2004-02-29
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-04-25:/blog/archive/2005/04/25/rss2email-web-admin/
 Title: rss2email web administration
 Date: 2005-04-25
 

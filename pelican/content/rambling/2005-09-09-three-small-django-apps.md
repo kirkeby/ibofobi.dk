@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-09:/blog/archive/2005/09/09/three-small-django-apps/
 Title: Three small Django apps
 Date: 2005-09-09
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2004-09-22:/blog/archive/2004/09/22/what-os-are-you/
 Title: What OS Are You?
 Date: 2004-09-22
 

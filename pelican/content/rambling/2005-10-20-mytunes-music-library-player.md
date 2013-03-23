@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-10-20:/blog/archive/2005/10/20/mytunes-music-library-player/
 Title: myTunes: Music-library and player
 Date: 2005-10-20
 

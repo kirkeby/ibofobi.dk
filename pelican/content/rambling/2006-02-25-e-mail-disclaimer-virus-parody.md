@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2006-02-25:/blog/archive/2006/02/25/e-mail-disclaimer-virus-parody/
 Title: E-mail-disclaimer-virus parody
 Date: 2006-02-25
 

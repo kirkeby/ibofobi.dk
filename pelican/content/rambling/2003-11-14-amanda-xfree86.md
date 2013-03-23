@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2003-11-14:2003/11/14/amanda-xfree86
 Title: XFree86 troubles
 Date: 2003-11-14
 

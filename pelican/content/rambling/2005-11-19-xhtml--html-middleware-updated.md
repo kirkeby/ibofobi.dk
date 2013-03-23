@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-11-19:/blog/archive/2005/11/19/xhtml--html-middleware-updated/
 Title: XHTML-as-HTML middleware updated
 Date: 2005-11-19
 

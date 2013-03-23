@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2003-12-02:2003/12/02/mozilla-vs-shy
 Title: Mozilla versus &shy;
 Date: 2003-12-02
 

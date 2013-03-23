@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-10-06:/blog/archive/2005/10/06/django-blog-application/
 Title: Django blog application
 Date: 2005-10-06
 

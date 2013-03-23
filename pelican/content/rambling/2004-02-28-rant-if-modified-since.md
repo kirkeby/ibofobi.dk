@@ -1,3 +1,4 @@
+Id: http://ibofobi.dk/blog/archive/2004/02/28/rant-if-modified-since
 Title: Breaking the <tt>If-Modified-Since</tt> header
 Date: 2004-02-28
 

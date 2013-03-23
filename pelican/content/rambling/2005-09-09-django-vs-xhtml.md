@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-09:/blog/archive/2005/09/09/django-vs-xhtml/
 Title: Django vs XHTML
 Date: 2005-09-09
 

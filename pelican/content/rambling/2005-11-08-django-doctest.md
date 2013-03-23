@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-11-08:/blog/archive/2005/11/08/django-doctest/
 Title: Django doctest framework
 Date: 2005-11-08
 

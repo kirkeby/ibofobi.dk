@@ -1,3 +1,4 @@
+Id: http://ibofobi.dk/blog/archive/2004/02/22/this-travesty
 Title: This Travesty
 Date: 2004-02-22
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2006-02-26:/blog/archive/2006/02/26/classic-literature/
 Title: The Classics
 Date: 2006-02-26
 

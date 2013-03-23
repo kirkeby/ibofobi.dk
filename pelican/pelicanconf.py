@@ -39,7 +39,7 @@ PAGINATED_DIRECT_TEMPLATES = ['blog/index']
 FEED_ALL_ATOM = 'blog/feeds/latest/index.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-FEED_MAX_ITEMS = 42
+FEED_MAX_ITEMS = 10
 
 # Pelican only understands md/rst 'pages', so we have to tell it to that html
 # means it's a template-page.

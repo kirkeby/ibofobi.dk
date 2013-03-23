@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2006-03-13:/blog/archive/2006/03/13/new-bestest-firefox-extension/
 Title: New bestest Firefox extension
 Date: 2006-03-13
 

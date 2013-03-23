@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-12:/blog/archive/2005/09/12/vary-header-goodness/
 Title: Vary-header goodness
 Date: 2005-09-12
 

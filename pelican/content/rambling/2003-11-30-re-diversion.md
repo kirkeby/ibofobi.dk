@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2003-11-30:/blog/archive/2003/11/30/re-diversion/
 Title: Re: A Diversion
 Date: 2003-11-30
 

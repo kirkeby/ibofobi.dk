@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-10-18:/blog/archive/2005/10/18/scryer-django-page-view-counter/
 Title: Scryer: Django page-view counter
 Date: 2005-10-18
 

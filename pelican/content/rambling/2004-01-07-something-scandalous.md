@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2004-01-06:2004/01/06/something-scandalous
 Title: mood: extremely bored
 Date: 2004-01-07
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-04-19:/blog/archive/2005/04/19/links-and-keyboard-navigation/
 Title: Next/previous links and gmail-style keyboard navigation
 Date: 2005-04-19
 

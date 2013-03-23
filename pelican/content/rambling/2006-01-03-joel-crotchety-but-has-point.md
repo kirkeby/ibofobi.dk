@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2006-01-03:/blog/archive/2006/01/03/joel-crotchety-but-has-point/
 Title: Joel is crotchety, but has a point
 Date: 2006-01-03
 

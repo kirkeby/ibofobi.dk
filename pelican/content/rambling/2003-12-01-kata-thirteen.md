@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2003-12-01:2003/12/01/kata-thirteen
 Title: Kata Thirteen
 Date: 2003-12-01
 

@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-13:/blog/archive/2005/09/13/gzipmiddleware/
 Title: GZipMiddleware
 Date: 2005-09-13
 

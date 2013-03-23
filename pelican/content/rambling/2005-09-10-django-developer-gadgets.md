@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2005-09-10:/blog/archive/2005/09/10/django-developer-gadgets/
 Title: Django developer gadgets
 Date: 2005-09-10
 

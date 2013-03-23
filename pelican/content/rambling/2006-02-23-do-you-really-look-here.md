@@ -1,3 +1,4 @@
+Id: tag:ibofobi.dk,2006-02-24:/blog/archive/2006/02/24/do-you-really-look-here/
 Title: Meaningful Relational Sex?!
 Date: 2006-02-23
 
