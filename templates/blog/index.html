@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<section id="content">
+{% block content_title %}{% endblock %}
+
+<div id="recent-posts">
+{% for article in articles_page.object_list %}
+  {% include "blog/article.html" %}
+{% endfor %}
+</div>
+</section>
+{% block pagination %}{% endblock %}
+{% endblock content %}

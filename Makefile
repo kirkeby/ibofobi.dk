@@ -1,56 +1,57 @@
-TARGET_PREFIX=./dist
+PELICAN=pelican
+PELICANOPTS=
 
-SOURCES=$(shell find pages -type f | egrep 'html|txt' | egrep -v '~|/\.' | sed s,^pages,,) \
-        $(addsuffix /index,$(addprefix /blog/archive/,$(shell blog/published)))
-PAGES=$(addsuffix .html, $(basename ${SOURCES}))
-TARGETS=$(addprefix ${TARGET_PREFIX},${PAGES}) \
-	${TARGET_PREFIX}/blog/index.html \
-	${TARGET_PREFIX}/blog/archive/index.html \
-	${TARGET_PREFIX}/blog/feeds/latest/index.xml \
-	${TARGET_PREFIX}/stuff/curriculum-vitae/cv.pdf
+BASEDIR=$(CURDIR)
+INPUTDIR=$(BASEDIR)/content
+OUTPUTDIR=$(BASEDIR)/output
+CONFFILE=$(BASEDIR)/pelicanconf.py
+PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-.PHONY: all
+SSH_HOST=farnsworth.parabox.dk
+SSH_PORT=22
+SSH_USER=sune
+SSH_TARGET_DIR=/home/sune/public_html/ibofobi.dk/pelican
 
-all: ${TARGETS}
+help:
+	@echo 'Makefile for a pelican Web site                                        '
+	@echo '                                                                       '
+	@echo 'Usage:                                                                 '
+	@echo '   make html                        (re)generate the web site          '
+	@echo '   make clean                       remove the generated files         '
+	@echo '   make regenerate                  regenerate files upon modification '
+	@echo '   make publish                     generate using production settings '
+	@echo '   make serve                       serve site at http://localhost:8000'
+	@echo '   make devserver                   start/restart develop_server.sh    '
+	@echo '   ssh_upload                       upload the web site via SSH        '
+	@echo '   rsync_upload                     upload the web site via rsync+ssh  '
+	@echo '   dropbox_upload                   upload the web site via Dropbox    '
+	@echo '   ftp_upload                       upload the web site via FTP        '
+	@echo '   github                           upload the web site via gh-pages   '
+	@echo '                                                                       '
 
-${TARGET_PREFIX}/%: pages/%
-	@cp -f $^ $@
 
-${TARGET_PREFIX}/%.html: pages/%.html html.xsl page.html metal
-	@echo $<
-	@mkdir -p $(dir $@)
-	@./metal --xhtml-doctype < $< | ./to-html > $@.work
-	@mv -f $@.work $@
+html: clean $(OUTPUTDIR)/index.html
+	@echo 'Done'
 
-${TARGET_PREFIX}/%.html: pages/%.txt html.xsl page.html metal markdown
-	@echo $<
-	@mkdir -p $(dir $@)
-	@./markdown < $< | ./metal --xhtml-doctype | ./to-html > $@.work
-	@mv -f $@.work $@
+$(OUTPUTDIR)/%.html:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-${TARGET_PREFIX}/blog/archive/%/index.html: blog/% html.xsl page.html blog/post.xhtml blog/blog.py metal
-	@echo $<
-	@mkdir -p $(dir $@)
-	@./metal --xhtml-doctype \
-		--context 'post=blog:read_post("$(subst blog/,,$<)")' \
-		< blog/post.xhtml | ./to-html > $@.work
-	@mv -f $@.work $@
+clean:
+	find $(OUTPUTDIR) -mindepth 1 -delete
 
-${TARGET_PREFIX}/blog/archive/index.html: blog/index html.xsl page.html blog/archive.xhtml blog/blog.py $(addprefix blog/,$(shell blog/published))
-	@echo blog/archive/
-	@./metal --xhtml-doctype --context 'posts=blog:all()' \
-		< blog/archive.xhtml | ./to-html > $@.work
-	@mv -f $@.work $@
+regenerate: clean
+	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-${TARGET_PREFIX}/blog/index.html: blog/index html.xsl page.html blog/recent.xhtml blog/blog.py
-	@echo blog/
-	@./metal --xhtml-doctype --context 'posts=blog:recent()' \
-		< blog/recent.xhtml | ./to-html > $@.work
-	@mv -f $@.work $@
+serve:
+	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
 
-${TARGET_PREFIX}/blog/feeds/latest/index.xml: blog/index blog/atom.xml blog/blog.py
-	@echo blog/feeds/latest/
-	@mkdir -p $(dir $@)
-	@./metal --context 'posts=blog:recent()' --context 'blog=blog:info' \
-		< blog/atom.xml > $@.work
-	@mv -f $@.work $@
+devserver:
+	$(BASEDIR)/develop_server.sh restart
+
+publish:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+
+push: publish
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR) $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github

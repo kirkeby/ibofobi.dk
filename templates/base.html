@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  {% block head %}
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+  <meta charset="utf-8" />
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"
+        type="application/atom+xml" rel="alternate"
+        title="{{ SITENAME }}" />
+
+  <link rel='icon'
+        href='{{ SITEURL }}/static/images/favicon.ico' />
+  <link rel='shortcut icon'
+        href='{{ SITEURL }}/static/images/favicon.ico' />
+  <link rel='stylesheet' type='text/css'
+        href='{{ SITEURL }}/static/css/style.css' />
+
+  <!-- Google Sitemaps -->
+  <meta name="verify-v1"
+        content="8u4Gp82fIVBEO0b4Rm7jNQR54uxmr7M4r+gDvFz5wbM=" />
+
+  <!-- OpenID -->
+  <link rel="openid.server"
+        href="http://www.myopenid.com/server"/>
+  <link rel="openid.delegate"
+        href="http://kirkeby.myopenid.com/"/>
+  {% endblock head %}
+</head>
+
+<body id="index" class="home">
+  <hr/>
+  <div id='meta'>
+    {% block meta %}
+      The blagotube home of <a href='{{ SITEURL}}/about/'>Sune Kirkeby</a>.
+      Here are <a href='{{ SITEURL}}/blog/'>rambling rants</a> and
+      <a href='{{ SITEURL }}/stuff/'>some bits of code</a>.
+    {% endblock meta %}
+  </div>
+  <hr/>
+
+  {% block heading %}{% endblock heading %}
+
+  {% block content %}{% endblock content %}
+
+  {% if GOOGLE_ANALYTICS %}
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{GOOGLE_ANALYTICS}}']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  {% endif %}
+</body>
+</html>

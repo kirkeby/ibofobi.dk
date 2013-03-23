@@ -1,4 +1,9 @@
-- faa media.ibofobi.dk flettet herind i
-- tags på blog-posts?
-- konverter wiki-sidernes indhold
-- links med rel up/next/prev/top på alle sider
+ * Pull request the pelican changes.
+
+ * Spell-checking?
+
+ * Auto-check for 404s.
+
+ * Pretty 404 page?  Auto-notify me?
+
+ * Comments? Disqus?

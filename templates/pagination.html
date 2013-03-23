@@ -1,0 +1,16 @@
+{% if DEFAULT_PAGINATION %}
+  <div class='pagination'>
+    <hr>
+    {% if articles_page.has_next() %}
+      <div class='left'>
+        ← <a href="index{{ articles_page.next_page_number() }}.html">Older articles</a>
+      </div>
+    {% endif %}
+    {% if articles_page.has_previous() %}
+      <div class='right'>
+        <a href="index{{ articles_page.previous_page_number() }}.html">Newer articles</a> →
+      </div>
+    {% endif %}
+    <br><hr>
+  </div>
+{% endif %}
