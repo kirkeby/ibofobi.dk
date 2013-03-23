@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Sune Kirkeby{% endblock %}
+{% block heading %}<h1>Honourable Mentions</h1>{% endblock %}
+{% block content %}
+
+  <p>These are a few of the things I have committed in the name of Happy
+  Hacking. Please forgive my sins.</p>
+
+  <!-- FIXME - cut'n'pasted from stuff/ -->
+  <dl>
+  <dt><a href='stuff/mp3/'>Python MP3</a></dt>
+  <dd>Some Python code to parse MP3 files and ID3 tags.</dd>
+
+  <dt><a href='stuff/hurd-entropy/'><code>/dev/{,u}random</code>
+  driver for GNU/Hurd</a></dt>
+  <dd>A port of the Linux <code>/dev/{,u}random</code> driver to
+  GNU/Hurd.</dd>
+
+  <dt><a href='download/portalfs.tar.gz'>user-space portals</a></dt>
+  <dd>An user-space implementation of the old portals concept from BSD4.4;
+  this is for UNIXen that dynamically link executables. If you have no
+  idea what I am talking about you might want to read <a
+  href='http://www.kohala.com/start/portals.ps'>Portals in 4.4BSD</a> by
+  W. Richard Stevens and Jan-Simon Pendry.</dd>
+  </dl>
+
+  <p>Other than the above Honourable Mentions I have produced patches for
+  various free software projects. <a
+  href='http://www.google.com/search?&amp;q=%22Sune%20Kirkeby%22'>Googling for
+  my name</a> usually turn up these (along with a lot of other stuff about
+  me and by me).</p>
+{% endblock %}
