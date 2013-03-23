@@ -21,6 +21,9 @@ FILES_TO_COPY = [
 STATIC_PATHS = ['css', 'js', 'images', 'files']
 STATIC_SAVE_AS = 'static/{path}'
 
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = PAGE_URL + 'index.html'
+
 ARTICLE_URL = 'blog/archive/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 

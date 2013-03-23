@@ -1,5 +1,48 @@
-Title: Reading 2005 -- 2007
-Date: 2007-12-31
+Title: Reading
+
+2013
+====
+
+ * _Children of Dune_, Frank Herbert
+ * _Dune Messiah_, Frank Herbert
+ * _Dune_, Frank Herbert
+ * _The Great North Road_, Peter F. Hamilton
+
+2009
+====
+
+ * _Neverwhere_, Neil Gaiman
+ * _Matter_, Ian M. Banks
+ * _The Family Trade_, Charles Stross
+ * _Neuromancer_, William Gibson
+ * _The Atrocity Archives_, Charles Stross
+ * _Anathem_, Neal Stephenson
+ * _Market Forces_, Richard Morgan
+ * _Singularity Sky_, Charles Stross
+ * _The Dreaming Void_, Peter F. Hamilton
+ * _Radio Free Albemuth_, Philip K. Dick
+ * _The War of The Worlds_, H. G. Wells
+
+2008
+====
+
+ * _I Am Legend_, Richard Matheson
+ * _The Adventures of Huckleberry Finn_, Mark Twain
+ * _The Adventures of Tom Sawyer_, Mark Twain
+ * _Do Androids Dream of Electric Sheep?_, Philip K. Dick
+ * _Local Breads_, Daniel Leader
+ * _The Wasp Factory_, Iain Banks
+ * _Programming Collective Intelligence_, Toby Segaran
+ * _Structure and Interpretation of Computer Programs_, Abelson & Sussman
+ * _Consider Phlebas_, Iain M. Banks
+ * _The Moon is a Harsh Mistress_, Robert A. Heinlein
+ * _The System of the World_, Neal Stephenson
+ * _Good Omens_, Neil Gaiman & Terry Pratchett
+ * _Stardust_, Neil Gaiman
+ * _Against a Dark Background_, Iain M. Banks
+
+2005 -- 2007
+============
 
  * _The Confusion_, Neal Stephenson
  * _Quicksilver_, Neal Stephenson
