@@ -9,7 +9,8 @@ decided to add a `sitecustomize` module to the Python standard library. This
 is *not* what `sitecustomize` is for, `sitecustomize` is for "performing
 arbitrary site-specific customizations".
 
-So, puppet to the resuce:
+This is pretty annoying, when you want to use `sitecustomize` for its intended
+purpose, so puppet to the rescue:
 
     :::puppet
     file { ['/usr/lib/python2.7/sitecustomize.py',
