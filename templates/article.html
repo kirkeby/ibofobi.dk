@@ -1,31 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
 <section id="content" class="body">
-  <header>
-    <div class="right padded big small-caps silent">
-      {{ article.date.strftime('%d. %b') }}<br>{{ article.date.year }}
-    </div>
-    <h1 class="entry-title">
-      <a href="{{ SITEURL }}/{{ article.url }}"
-         title="Permalink to {{ article.title|striptags }}"
-         rel="bookmark">{{ article.title }}</a>
-    </h1>
-  </header>
-  
-  <div class="entry-content">
-    {{ article.content }}
-  </div>
-  
-  <footer class="post-info silent">
-    This post was written by {{ article.author }} on
-    <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.date.strftime('%Y-%m-%d') }}</abbr>,
-    and claimed to be mostly about
-    <a href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a>.
-    {% if article.tags %}
-      Also, it has these tags:
-      {% for tag in article.tags %}
-        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}.
-      {% endif %}
-  </footer>
+  {% include "blog/article.html" %}
 </section>
 {% endblock %}
