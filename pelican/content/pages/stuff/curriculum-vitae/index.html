@@ -1,18 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html metal:use-macro='macros/page'>
-<head>
-  <title metal:fill-slot='title'>Curriculum Vitae</title>
-</head>
-<body>
-<div metal:fill-slot='content'>
-
-<h1>Curriculum Vitae</h1>
-
+{% extends "base.html" %}
+{% block title %}Curriculum Vitae{% endblock %}
+{% block heading %}<h1>Curriculum Vitae</h1>{% endblock %}
+{% block content %}
 <p><a href='cv.pdf'>My curriculum vitae</a> is now a spiffy PDF document.</p>
-
-</div>
-</body>
-</html>
+{% endblock %}
