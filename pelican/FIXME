@@ -1,5 +1,9 @@
+ * Check the atom feed ids.
+
  * Auto-check for 404s.
 
  * Pretty 404 page?  Auto-notify me?
 
  * Next/previous in blog posts?
+
+ * Comments? Disqus?

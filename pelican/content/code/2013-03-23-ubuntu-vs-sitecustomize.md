@@ -1,5 +1,5 @@
 Title: Ubuntu vs sitecustomize.py
-Tags: ubuntu python puppet
+Tags: ubuntu, python, puppet
 
 Sometimes it is almost like the Ubuntu developers go out of their way to annoy
 the rest of the world, <a
