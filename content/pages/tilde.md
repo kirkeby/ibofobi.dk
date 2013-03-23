@@ -1,5 +1,5 @@
-~
-=
+Title: ~
+Slug: tilde
 
  * [damninteresting](http://www.damninteresting.com/)
  * [euler](http://projecteuler.net/)
