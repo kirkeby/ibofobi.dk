@@ -19,7 +19,7 @@ FILES_TO_COPY = [
 STATIC_PATHS = ['css', 'js', 'images']
 STATIC_SAVE_AS = 'static/{path}'
 
-ARTICLE_URL = 'blog/archive/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 
 DIRECT_TEMPLATES = ['tags', 'categories', 'archives']
