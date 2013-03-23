@@ -1,9 +1,7 @@
- * /blog/ index
-
  * Google Analytics.
 
  * Auto-check for 404s.
 
  * Pretty 404 page?  Auto-notify me?
 
- * Fix atom feed URL.
+ * Next/previous in blog posts?
