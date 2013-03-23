@@ -3,6 +3,10 @@
 
 import os
 
+# Plugins
+PLUGIN_PATH = 'plugins'
+PLUGINS = ['chronological_links']
+
 AUTHOR = u'Sune Kirkeby'
 SITENAME = u'ibofobi.dk'
 SITEURL = 'http://ibofobi.dk'
