@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import blog
+
+for post in blog.all():
+    slug = post['date'][:10] + '-' + post['name'].split('/')[-1]
+    path = '../pelican/content/rambling/' + slug + '.md'
+    with open(path, 'w') as f:
+        f.write('\n'.join([
+            'Title: ' + post['title'],
+            'Date: ' + post['date'],
+            '',
+            post['text']
+        ]).encode('utf-8'))
+
