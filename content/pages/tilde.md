@@ -27,7 +27,7 @@ news and odds:
  * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
  * [slashdot](http://slashdot.org/)
  * [reddit](http://www.reddit.com/)
- * [yc](http://hackful.com/)
+ * [yc](http://hckrnews.com/)
  * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
 
 foo:
