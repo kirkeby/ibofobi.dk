@@ -53,17 +53,10 @@ h3 a { text-decoration: none; }
 h1 a:hover,
 h2 a:hover,
 h3 a:hover { text-decoration: underline; }
-h1 a:visited,
-h2 a:visited,
-h3 a:hover { color: black; }
 
-a:link {
+a {
     background: white;
     color: black;
-}
-a:visited {
-    background: white;
-    color: #777777;
 }
 a img {
     border: none;
