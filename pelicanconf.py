@@ -48,6 +48,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 FEED_MAX_ITEMS = 10
 
+DEFAULT_PAGINATION = 7
+
 # Pelican only understands md/rst 'pages', so we have to tell it to that html
 # means it's a template-page.
 TEMPLATE_PAGES = {}
