@@ -41,6 +41,9 @@ h1 {
     font-size: 300%;
     text-align: center;
 }
+h1.entry-title {
+    text-align: left;
+}
 h2 { font-size: 200%; }
 h3 { font-size: 150%; }
 
@@ -86,6 +89,13 @@ div.update {
 }
 .silent {
     color: gray;
+}
+
+.silent a {
+    text-decoration: none;
+}
+.silent a:hover {
+    text-decoration: underline;
 }
 
 /* Specific element styles */
