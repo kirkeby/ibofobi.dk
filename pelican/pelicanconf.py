@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+import os
+
 AUTHOR = u'Sune Kirkeby'
 SITENAME = u'ibofobi.dk'
 SITEURL = 'http://ibofobi.dk'
@@ -18,7 +20,13 @@ ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 
 DIRECT_TEMPLATES = ['tags', 'categories', 'archives']
 
-TEMPLATE_PAGES = {
-    'pages/index.html': 'index.html',
-    'pages/about/index.html': 'about/index.html',
-}
+# Pelican only understands md/rst 'pages', so we have to tell it to that html
+# means it's a template-page.
+TEMPLATE_PAGES = {}
+for path, dirnames, filenames in os.walk('content/pages'):
+    for filename in filenames:
+        if filename.endswith('.html'):
+            path = os.path.join(path, filename)
+            content_path = path.split('/', 1)[1]
+            output_path = content_path.split('/', 1)[1]
+            TEMPLATE_PAGES[content_path] = output_path
