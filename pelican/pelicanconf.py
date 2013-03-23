@@ -7,16 +7,18 @@ SITEURL = 'http://ibofobi.dk'
 TIMEZONE = 'Europe/Copenhagen'
 DEFAULT_LANG = u'en'
 
-THEME = 'theme'
-
-FILES_TO_COPY = [
-    #('robots.txt', 'robots.txt'),
-]
-
-TEMPLATE_PAGES = {
-    #'pages/index.html': 'dest/index.html',
-}
+THEME = '.'
+THEME_STATIC_PATHS = []
 
 STATIC_PATHS = ['css', 'js', 'images']
-
 STATIC_SAVE_AS = 'static/{path}'
+
+ARTICLE_URL = 'blog/archive/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+
+DIRECT_TEMPLATES = ['tags', 'categories', 'archives']
+
+TEMPLATE_PAGES = {
+    'pages/index.html': 'index.html',
+    'pages/about/index.html': 'about/index.html',
+}
