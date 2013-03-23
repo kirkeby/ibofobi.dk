@@ -12,7 +12,7 @@ body {
     margin-right: auto;
 }
 
-pre code, blockquote {
+pre code, blockquote, .codehilite {
     display: block;
     margin: 1em 0em 1em 0em;
     padding: 3px;
