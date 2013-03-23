@@ -1,22 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="content">
-{% block content_title %}
-<h2>All articles</h2>
-{% endblock %}
+{% block content_title %}{% endblock %}
 
-<ol id="post-list">
+<div id="recent-posts">
 {% for article in articles_page.object_list %}
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                    {% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-        </article></li>
+  <article class="hentry">
+    <header>
+      <div class="right padded big small-caps silent">
+        {{ article.date.strftime('%d. %b') }}<br>{{ article.date.year }}
+      </div>
+      <h1 class="entry-title">
+        <a href="{{ SITEURL }}/{{ article.url }}"
+           title="Permalink to {{ article.title|striptags }}"
+           rel="bookmark">{{ article.title }}</a>
+      </h1>
+    </header>
+    <div class="entry-content">
+      {{ article.content }}
+    </div>
+  </article>
 {% endfor %}
-</ol><!-- /#posts-list -->
-{% include 'pagination.html' %}
-</section><!-- /#content -->
+</div>
+</section>
 {% endblock content %}

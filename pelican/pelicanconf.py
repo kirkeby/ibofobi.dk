@@ -21,10 +21,19 @@ FILES_TO_COPY = [
 STATIC_PATHS = ['css', 'js', 'images', 'files']
 STATIC_SAVE_AS = 'static/{path}'
 
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_URL = 'blog/archive/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 
-DIRECT_TEMPLATES = ['blog/index', 'tags', 'categories', 'archives']
+AUTHOR_URL = 'blog/author/{slug}/'
+AUTHOR_SAVE_AS = AUTHOR_URL + 'index.html'
+
+CATEGORY_URL = 'blog/category/{slug}/'
+CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'
+
+TAG_URL = 'blog/tag/{slug}/'
+TAG_SAVE_AS = TAG_URL + 'index.html'
+
+DIRECT_TEMPLATES = ['blog/index']
 PAGINATED_DIRECT_TEMPLATES = ['blog/index']
 
 # Pelican only understands md/rst 'pages', so we have to tell it to that html
