@@ -9,6 +9,8 @@ SITEURL = 'http://ibofobi.dk'
 TIMEZONE = 'Europe/Copenhagen'
 DEFAULT_LANG = u'en'
 
+TYPOGRIFY = True
+
 THEME = '.'
 THEME_STATIC_PATHS = []
 
