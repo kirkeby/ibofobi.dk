@@ -1,5 +1,5 @@
 Title: XFree86 troubles
-Date: 2003-11-14 23:30:00
+Date: 2003-11-14
 
 <p>The final episode in my epic struggle to get decent graphics on my
 aeon-old laptop.</p>
