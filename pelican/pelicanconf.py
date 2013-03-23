@@ -12,6 +12,10 @@ DEFAULT_LANG = u'en'
 THEME = '.'
 THEME_STATIC_PATHS = []
 
+FILES_TO_COPY = [
+    ('pages/stuff/curriculum-vitae/cv.pdf', 'stuff/curriculum-vitae/cv.pdf'),
+]
+
 STATIC_PATHS = ['css', 'js', 'images']
 STATIC_SAVE_AS = 'static/{path}'
 
