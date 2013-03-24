@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <link href="/blog/feed/latest/"
         type="application/atom+xml" rel="alternate"
-        title="about:me" />
+        title="{{ SITENAME }}" />
 
   <link rel='icon'
         href='{{ SITEURL }}/static/images/favicon.ico' />
@@ -31,11 +31,13 @@
 <body id="index" class="home">
   <hr/>
   <div id='meta'>
+    <center>
     {% block meta %}
       The blagotube home of <a href='{{ SITEURL}}/about/'>Sune Kirkeby</a>.
       Here are <a href='{{ SITEURL}}/blog/'>rambling rants</a> and
       <a href='{{ SITEURL }}/stuff/'>some bits of code</a>.
     {% endblock meta %}
+    </center>
   </div>
   <hr/>
 

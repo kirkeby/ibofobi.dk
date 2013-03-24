@@ -1,4 +1,5 @@
 {% extends "blog/base.html" %}
+{% block title %}{{ article.title | striptags }} &mdash; {{ SITENAME }}{% endblock %}
 {% block content %}
 <section id="content" class="body">
   {% include "blog/article.html" %}
