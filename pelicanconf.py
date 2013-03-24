@@ -8,7 +8,7 @@ PLUGIN_PATH = 'plugins'
 PLUGINS = ['chronological_links']
 
 AUTHOR = u'Sune Kirkeby'
-SITENAME = u'ibofobi.dk'
+SITENAME = u'about:me'
 SITEURL = 'http://ibofobi.dk'
 TIMEZONE = 'Europe/Copenhagen'
 DEFAULT_LANG = u'en'
