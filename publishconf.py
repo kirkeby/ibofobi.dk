@@ -13,5 +13,5 @@ DELETE_OUTPUT_DIRECTORY = True
 # one home, so use absolute URLs in production.
 RELATIVE_URLS = False
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = "ibofobi"
 GOOGLE_ANALYTICS = "UA-3678459-1"
