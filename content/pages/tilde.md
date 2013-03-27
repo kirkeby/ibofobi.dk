@@ -1,4 +1,4 @@
-Title: ~
+Title: don't be a dick
 Slug: tilde
 
  * [damninteresting](http://www.damninteresting.com/)
