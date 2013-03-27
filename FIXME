@@ -1,3 +1,5 @@
+ * Disable GA on /tilde/?
+
  * Caching headers.
 
  * Spell-checking?
