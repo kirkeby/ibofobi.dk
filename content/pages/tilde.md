@@ -41,7 +41,7 @@ foo:
  * [github](https://github.com/)
  * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
- * [reader](https://www.google.com/reader/view/)
+ * [feedbin](https://feedbin.me/)
 
 here:
 
