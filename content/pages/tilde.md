@@ -1,37 +1,27 @@
 Title: don't be a dick
 Slug: tilde
 
- * [damninteresting](http://www.damninteresting.com/)
- * [euler](http://projecteuler.net/)
  * [pinboard](http://pinboard.in/u:sune/)
 [todo](http://pinboard.in/u:sune/t:todo/)
 [tobuy](http://pinboard.in/u:sune/t:tobuy/)
 [tocook](http://pinboard.in/u:sune/t:tocook/)
 [unread](http://pinboard.in/u:sune/unread/)
- * [trello](https://trello.com/)
+ * [feedbin](https://feedbin.me/)
+ * [reddit](http://www.reddit.com/)
 
 forums:
 
  * [dsf](http://misantropiskselskab.dk/dsf/)
 
-comics:
-
- * [qc](http://www.questionablecontent.net/)
- * [cad](http://ctrlaltdel-online.com/comic.php)
- * [sinfest](http://www.sinfest.net/)
- * [least](http://www.leasticoulddo.com/)
-
 news and odds:
 
  * [lwn](http://lwn.net/)
- * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
  * [slashdot](http://slashdot.org/)
- * [reddit](http://www.reddit.com/)
- * [yc](http://hckrnews.com/)
- * [tv](http://www.dr.dk/tjenester/programoversigten/w3c/epg.asp)
 
 foo:
 
+ * [yc](http://hckrnews.com/)
+ * [euler](http://projecteuler.net/)
  * [8-ball](http://mel.ibofobi.dk/%7Esune/cgi-bin/8-ball)
  * [gmail](https://mail.google.com/a/ibofobi.dk/)
  * [google apps](https://www.google.com/a/ibofobi.dk/)
@@ -41,7 +31,7 @@ foo:
  * [github](https://github.com/)
  * [calendar](https://www.google.com/calendar/hosted/ibofobi.dk/render)
  * [analytics](https://www.google.com/analytics/home/admin)
- * [feedbin](https://feedbin.me/)
+ * [bofh (aka the register)](http://www.theregister.co.uk/odds/bofh/)
 
 here:
 
