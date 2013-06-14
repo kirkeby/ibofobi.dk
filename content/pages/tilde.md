@@ -20,7 +20,6 @@ news and odds:
 
 foo:
 
- * [yc](http://hckrnews.com/)
  * [euler](http://projecteuler.net/)
  * [8-ball](http://mel.ibofobi.dk/%7Esune/cgi-bin/8-ball)
  * [gmail](https://mail.google.com/a/ibofobi.dk/)
