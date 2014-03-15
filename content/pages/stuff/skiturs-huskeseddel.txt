@@ -15,6 +15,7 @@ Skiting:
  * Skibukser
  * Skijakke
  * Skisokker
+ * Badebukser
 
 Tøjting:
  * Boxershorts
@@ -38,6 +39,7 @@ Badeværelsesting:
  * Solcreme
  * Læbe-næse-solstift
  * Kleenex
+ * Negleklipper
 
 Papirting:
  * Pas
