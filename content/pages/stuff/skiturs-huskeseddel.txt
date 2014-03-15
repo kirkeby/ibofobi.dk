@@ -15,12 +15,6 @@ Skiting:
  * Skibukser
  * Skijakke
  * Skisokker
- * Solcreme
- * Læbe-næse-solstift
- * Kleenex
- * Lommelærke!
- * Energibarer / chokolade
- * Liftkortholder
 
 Tøjting:
  * Boxershorts
@@ -28,6 +22,7 @@ Tøjting:
  * Strømper
  * Hoodie
  * De bukser du har på
+ * Hjemmebukserne
  * Klipklappere
 
 Badeværelsesting:
@@ -35,11 +30,14 @@ Badeværelsesting:
  * Tandbørste
  * Shampoo
  * Barbergrej
-
-Medicinting:
  * Compete
  * Muskelvarme-dims
  * Hovedpinepiller
+ * Ekstra linser
+ * Ørepropper
+ * Solcreme
+ * Læbe-næse-solstift
+ * Kleenex
 
 Papirting:
  * Pas
@@ -47,9 +45,8 @@ Papirting:
  * Udenlandsk valuta
  * Gult og blåt sygesikringsbevis
  * Forsikringsoplysninger (police#, telefonnummer)
- * Billede til liftkort?
 
 Underholdningsting:
- * Bøger / eReader
- * Notesblok + Skriveting?
- * Stikdåse, opladere
+ * eReader
+ * Stikdåse, opladere, USB-kabler
+ * Lommelærke!
