@@ -16,6 +16,7 @@ Skiting:
  * Skijakke
  * Skisokker
  * Badebukser
+ * Gaffa
 
 Tøjting:
  * Boxershorts
