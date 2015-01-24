@@ -17,6 +17,8 @@ Skiting:
  * Skisokker
  * Badebukser
  * Gaffa
+ * Knæbind
+ * Rygposeting (mine-taske?)
 
 Tøjting:
  * Boxershorts
