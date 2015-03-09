@@ -7,7 +7,7 @@ Slug: tilde
 [tocook](http://pinboard.in/u:sune/t:tocook/)
 [unread](http://pinboard.in/u:sune/unread/)
  * [feedbin](https://feedbin.me/)
- * [reddit](http://www.reddit.com/)
+ * [reddit](://www.reddit.com/)
 
 forums:
 

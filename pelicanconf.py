@@ -9,7 +9,7 @@ PLUGINS = ['chronological_links']
 
 AUTHOR = u'Sune Kirkeby'
 SITENAME = u'about:me'
-SITEURL = 'http://ibofobi.dk'
+SITEURL = 'https://ibofobi.dk'
 TIMEZONE = 'Europe/Copenhagen'
 DEFAULT_LANG = u'en'
 
