@@ -1,0 +1,39 @@
+{% extends "blog/base.html" %}
+{% block title %}{{ article.title | striptags }} &mdash; {{ SITENAME }}{% endblock %}
+{% block content %}
+<section id="content" class="body">
+  {% include "blog/article.html" %}
+
+  <hr>
+  <div>
+  {% if article.next_url %}
+    <div class='left'>
+      ← <a href="{{SITEURL}}/{{article.next_url}}">{{article.next_title}}</a>
+    </div>
+  {% endif %}
+  {% if article.previous_url %}
+    <div class='right'>
+      <a href="{{SITEURL}}/{{article.previous_url}}">{{article.previous_title}}</a> →
+    </div>
+  {% endif %}
+  </div>
+  <br><hr>
+
+  {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_identifier = "{{ article.url }}";
+      var disqus_url = "{{ SITEURL }}/{{ article.url }}";
+      // FIXME - is |escape enough in JS?
+      var disqus_title = "{{ article.title|escape }}";
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

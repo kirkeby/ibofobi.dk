@@ -1,4 +1,13 @@
-- faa media.ibofobi.dk flettet herind i
-- tags på blog-posts?
-- konverter wiki-sidernes indhold
-- links med rel up/next/prev/top på alle sider
+ * Disable GA on /tilde/?
+
+ * Caching headers.
+
+ * Spell-checking?
+
+ * Auto-check for 404s.
+
+ * Notifications for 404s.
+
+ * Sitemap?
+
+ * Mails fra Analytics?

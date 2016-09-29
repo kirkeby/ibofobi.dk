@@ -1,2 +1,0 @@
-#!/bin/sh
-exec cut -f 3 `dirname $0`/index

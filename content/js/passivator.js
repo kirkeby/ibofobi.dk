@@ -1,0 +1,4 @@
+var verbsRE = /(\b)(i\'m|it\'s|he\'s|here\'s|she\'s|that\'s|there\'s|they\'re|we\'re|what\'s|who\'s|you\'re|is|are|am|are|was|were|be|being|been|go)(\b)/gi;
+var lyRE=/(\w)(ly)(\b)/gim;
+function HL(node){if(node.hasChildNodes){var hi_cn;for(hi_cn=0;hi_cn<node.childNodes.length;hi_cn++){HL(node.childNodes[hi_cn]);}}if(node.nodeType==3){var tempNodeVal=node.nodeValue;if(verbsRE.test(tempNodeVal)){tempNodeVal=tempNodeVal.replace(verbsRE,"$1<span style='background-color:yellow;color:black;border:1px solid black;'>$2</span>$3");tempNodeVal=tempNodeVal.replace(lyRE,"$1<span style='background-color:#0ff;color:black;border:1px solid black;'>$2</span>$3");newNode=document.createElement('span');newNode.innerHTML=tempNodeVal;pn=node.parentNode;pn.replaceChild(newNode,node);}}} 
+HL(window.document.getElementById('preview'));

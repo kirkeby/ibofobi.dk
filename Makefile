@@ -1,56 +1,35 @@
-TARGET_PREFIX=./dist
+PELICAN=pelican
+PELICANOPTS=
 
-SOURCES=$(shell find pages -type f | egrep 'html|txt' | egrep -v '~|/\.' | sed s,^pages,,) \
-        $(addsuffix /index,$(addprefix /blog/archive/,$(shell blog/published)))
-PAGES=$(addsuffix .html, $(basename ${SOURCES}))
-TARGETS=$(addprefix ${TARGET_PREFIX},${PAGES}) \
-	${TARGET_PREFIX}/blog/index.html \
-	${TARGET_PREFIX}/blog/archive/index.html \
-	${TARGET_PREFIX}/blog/feeds/latest/index.xml \
-	${TARGET_PREFIX}/stuff/curriculum-vitae/cv.pdf
+BASEDIR=$(CURDIR)
+INPUTDIR=$(BASEDIR)/content
+OUTPUTDIR=$(BASEDIR)/output
+CONFFILE=$(BASEDIR)/pelicanconf.py
+PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-.PHONY: all
+SSH_HOST=farnsworth.parabox.dk
+SSH_TARGET_DIR=/home/sune/www/ibofobi.dk/htdocs/
 
-all: ${TARGETS}
 
-${TARGET_PREFIX}/%: pages/%
-	@cp -f $^ $@
+html: clean $(OUTPUTDIR)/index.html
+	@echo 'Done'
 
-${TARGET_PREFIX}/%.html: pages/%.html html.xsl page.html metal
-	@echo $<
-	@mkdir -p $(dir $@)
-	@./metal --xhtml-doctype < $< | ./to-html > $@.work
-	@mv -f $@.work $@
+$(OUTPUTDIR)/%.html:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-${TARGET_PREFIX}/%.html: pages/%.txt html.xsl page.html metal markdown
-	@echo $<
-	@mkdir -p $(dir $@)
-	@./markdown < $< | ./metal --xhtml-doctype | ./to-html > $@.work
-	@mv -f $@.work $@
+clean:
+	find $(OUTPUTDIR) -mindepth 1 -delete
 
-${TARGET_PREFIX}/blog/archive/%/index.html: blog/% html.xsl page.html blog/post.xhtml blog/blog.py metal
-	@echo $<
-	@mkdir -p $(dir $@)
-	@./metal --xhtml-doctype \
-		--context 'post=blog:read_post("$(subst blog/,,$<)")' \
-		< blog/post.xhtml | ./to-html > $@.work
-	@mv -f $@.work $@
+regenerate: clean
+	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-${TARGET_PREFIX}/blog/archive/index.html: blog/index html.xsl page.html blog/archive.xhtml blog/blog.py $(addprefix blog/,$(shell blog/published))
-	@echo blog/archive/
-	@./metal --xhtml-doctype --context 'posts=blog:all()' \
-		< blog/archive.xhtml | ./to-html > $@.work
-	@mv -f $@.work $@
+serve:
+	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
 
-${TARGET_PREFIX}/blog/index.html: blog/index html.xsl page.html blog/recent.xhtml blog/blog.py
-	@echo blog/
-	@./metal --xhtml-doctype --context 'posts=blog:recent()' \
-		< blog/recent.xhtml | ./to-html > $@.work
-	@mv -f $@.work $@
+publish:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-${TARGET_PREFIX}/blog/feeds/latest/index.xml: blog/index blog/atom.xml blog/blog.py
-	@echo blog/feeds/latest/
-	@mkdir -p $(dir $@)
-	@./metal --context 'posts=blog:recent()' --context 'blog=blog:info' \
-		< blog/atom.xml > $@.work
-	@mv -f $@.work $@
+rsync: publish
+	rsync -Prz --delete $(OUTPUTDIR)/. $(SSH_HOST):$(SSH_TARGET_DIR)
+
+.PHONY: html clean regenerate serve publish rsync
