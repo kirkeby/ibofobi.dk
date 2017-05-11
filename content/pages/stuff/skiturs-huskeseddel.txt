@@ -18,7 +18,6 @@ Skiting:
  * Badebukser
  * Gaffa
  * Knæbind
- * Rygposeting (mine-taske?)
 
 Tøjting:
  * Boxershorts
@@ -34,7 +33,6 @@ Badeværelsesting:
  * Tandbørste
  * Shampoo
  * Barbergrej
- * Compete
  * Muskelvarme-dims
  * Hovedpinepiller
  * Ekstra linser
@@ -53,5 +51,12 @@ Papirting:
 
 Underholdningsting:
  * eReader
+ * Laptop? iPad?
  * Stikdåse, opladere, USB-kabler
  * Lommelærke!
+
+Huskeliste:
+ * Offline papir-ting på Google Drive
+ * Offline Netflix på iPad
+ * Bøger på Kindle
+ * Musik på telefon
